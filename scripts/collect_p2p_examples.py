@@ -60,9 +60,7 @@ def save_json(path: Path, description: str, request: Dict[str, Any], response: A
         )
 
 
-def call_and_save(
-    method: Any, params: Dict[str, Any], path: Path, description: str
-) -> Any:
+def call_and_save(method: Any, params: Dict[str, Any], path: Path, description: str) -> Any:
     """Call ``method`` with ``params`` and persist the response."""
     try:  # pragma: no cover - network/HTTP errors
         response = method(**params)
@@ -121,8 +119,8 @@ def collect() -> None:
             # Competitor advertisements
             online_params = {
                 "tokenId": TOKEN_ID,
-                "currencyId": currency,
-                "side": side_value,
+                "currencyId": currency,  # camelCase
+                "side": side_value,      # scalar int (0/1)
                 "page": 1,
                 "size": 10,
             }
@@ -136,7 +134,7 @@ def collect() -> None:
             # My advertisements
             my_ads_params = {
                 "tokenId": TOKEN_ID,
-                "currency_id": currency,
+                "currencyId": currency,  # camelCase (was currency_id)
                 "side": side_value,
                 "page": 1,
                 "size": 10,
@@ -150,8 +148,8 @@ def collect() -> None:
 
             # Orders and grouped orders by status
             order_params = {
-                "tokenId": TOKEN_ID,
-                "side": [side_value],
+                # "tokenId": TOKEN_ID,   # not required for get_orders; may cause 10001 on some variants
+                "side": side_value,      # scalar, not list
                 "page": 1,
                 "size": 50,
             }
@@ -184,11 +182,7 @@ def collect() -> None:
                     if status not in seen_status:
                         seen_status[status] = True
                         save_json(
-                            base
-                            / "orders"
-                            / side_name
-                            / currency
-                            / f"status_{status}.json",
+                            base / "orders" / side_name / currency / f"status_{status}.json",
                             f"Example order with status {status} for {side_name} {TOKEN_ID} in {currency}",
                             order_params,
                             order,
@@ -196,11 +190,11 @@ def collect() -> None:
                     if not first_order_for_currency:
                         first_order_for_currency = order
 
-                # Order details for the first order found for this currency
+                # Order details & extras for the first order found for this currency
                 if first_order_for_currency:
                     order_id = first_order_for_currency.get("orderId") or first_order_for_currency.get("id")
                     if order_id:
-                        details_resp = call_and_save(
+                        call_and_save(
                             client.get_order_details,
                             {"orderId": order_id},
                             base / "order_details" / side_name / currency / f"{order_id}.json",
@@ -211,24 +205,17 @@ def collect() -> None:
                             call_and_save(
                                 client.get_counterparty_info,
                                 {"originalUid": original_uid, "orderId": order_id},
-                                base
-                                / "counterparty_info"
-                                / side_name
-                                / currency
-                                / f"{order_id}.json",
+                                base / "counterparty_info" / side_name / currency / f"{order_id}.json",
                                 f"Counterparty info for order {order_id}",
                             )
                         call_and_save(
                             client.get_chat_messages,
                             {"orderId": order_id, "startMessageId": 0, "size": 100},
-                            base
-                            / "chat_messages"
-                            / side_name
-                            / currency
-                            / f"{order_id}.json",
+                            base / "chat_messages" / side_name / currency / f"{order_id}.json",
                             f"Chat messages for order {order_id}",
                         )
                 else:
+                    # Placeholders for missing orders
                     placeholder_id = "0"
                     call_and_save(
                         client.get_order_details,
@@ -248,26 +235,6 @@ def collect() -> None:
                         base / "chat_messages" / side_name / currency / "none.json",
                         "Chat messages placeholder",
                     )
-            else:
-                placeholder_id = "0"
-                call_and_save(
-                    client.get_order_details,
-                    {"orderId": placeholder_id},
-                    base / "order_details" / side_name / currency / "none.json",
-                    "Order details placeholder",
-                )
-                call_and_save(
-                    client.get_counterparty_info,
-                    {"originalUid": "0", "orderId": placeholder_id},
-                    base / "counterparty_info" / side_name / currency / "none.json",
-                    "Counterparty info placeholder",
-                )
-                call_and_save(
-                    client.get_chat_messages,
-                    {"orderId": placeholder_id, "startMessageId": 0, "size": 100},
-                    base / "chat_messages" / side_name / currency / "none.json",
-                    "Chat messages placeholder",
-                )
 
             # Ad details for the first advertisement
             if "error" not in my_ads_resp:
@@ -297,4 +264,3 @@ def collect() -> None:
 
 if __name__ == "__main__":
     collect()
-
