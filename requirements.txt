@@ -1,2 +1,5 @@
-python-dotenv
 bybit_p2p==1.1.0
+pycryptodome==3.23.0
+python-dotenv
+requests==2.32.4
+requests-toolbelt==1.0.0

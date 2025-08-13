@@ -1,0 +1,9 @@
+{
+  "description": "Order details placeholder",
+  "request": {
+    "orderId": "0"
+  },
+  "response": {
+    "error": "HTTPSConnectionPool(host='api.bybit.com', port=443): Max retries exceeded with url: /v5/p2p/order/info (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))"
+  }
+}
