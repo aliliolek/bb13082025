@@ -5,6 +5,6 @@
     "orderId": "0"
   },
   "response": {
-    "error": "HTTPSConnectionPool(host='api.bybit.com', port=443): Max retries exceeded with url: /v5/p2p/user/order/personal/info (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))"
+    "error": "Invalid request parameter (ErrCode: 912130004) (ErrTime: 19:31:12).\nRequest → https://api.bybit.com/v5/p2p/user/order/personal/info: {\"originalUid\": \"0\", \"orderId\": \"0\"}."
   }
 }

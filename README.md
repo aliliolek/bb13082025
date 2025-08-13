@@ -1,8 +1,6 @@
 # Sample App
 
-
 A minimal Python project skeleton that interacts with the Bybit P2P API.
-
 
 ## Setup and Usage
 
@@ -31,3 +29,12 @@ BYBIT_RECV_WINDOW=20000  # optional
 
 `BYBIT_RECV_WINDOW` controls the request receive window in milliseconds.
 
+## Protected directories (DO NOT EDIT)
+
+The following paths are **reference-only**. They must never be modified by humans or AI tools.
+
+- `examples/` – sample API payloads/responses (ground truth for I/O)
+- `scripts/` – project utilities used by CI and local tooling
+- `reference_bybit_p2p_lib/` – a pinned copy of the bybit_p2p library
+
+**Codex/Cursor:** You may read these folders to understand the API, but you must not edit, not move, not import or delete anything inside them.

@@ -2,10 +2,10 @@
   "description": "Chat messages placeholder",
   "request": {
     "orderId": "0",
-    "startMessageId": 0,
-    "size": 100
+    "startMessageId": "0",
+    "size": "100"
   },
   "response": {
-    "error": "HTTPSConnectionPool(host='api.bybit.com', port=443): Max retries exceeded with url: /v5/p2p/order/message/listpage (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))"
+    "error": "Failed to retrieve order number [912200165] (ErrCode: 912200165) (ErrTime: 19:31:12).\nRequest → https://api.bybit.com/v5/p2p/order/message/listpage: {\"orderId\": \"0\", \"startMessageId\": \"0\", \"size\": \"100\"}."
   }
 }

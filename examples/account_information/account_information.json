@@ -22,7 +22,7 @@
       "averageReleaseTime": "1",
       "averageTransferTime": "4",
       "accountCreateDays": 1200,
-      "firstTradeDays": 709,
+      "firstTradeDays": 710,
       "realName": "OLEKSII PISHCHUHIN",
       "recentTradeAmount": "13569.4523",
       "totalTradeAmount": "2978112.4196",
@@ -81,6 +81,6 @@
     },
     "ext_code": "",
     "ext_info": {},
-    "time_now": "1755102109.856099"
+    "time_now": "1755113468.907100"
   }
 }

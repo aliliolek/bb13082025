@@ -77,13 +77,7 @@ def call_and_save(method: Any, params: Dict[str, Any], path: Path, description: 
 def _extract_original_uid(order: Dict[str, Any]) -> Optional[str]:
     """Best-effort extraction of a counterparty UID from an order object."""
     potential_keys: Iterable[str] = (
-        "originalUid",
-        "counterpartyUid",
-        "otherUid",
-        "uid",
-        "userId",
-        "buyerUid",
-        "sellerUid",
+        "targetUserId",
     )
     for key in potential_keys:
         value = order.get(key)
@@ -124,7 +118,7 @@ def collect() -> None:
             online_params = {
                 "tokenId": TOKEN_ID,
                 "currencyId": currency,  # camelCase
-                "side": side_value,      # scalar int (0/1)
+                "side": side_value,       # string "0"/"1" (required)
                 "page": "1",
                 "size": "10",
             }
@@ -150,12 +144,17 @@ def collect() -> None:
                 f"My advertisements for {side_name} {TOKEN_ID} in {currency}",
             )
 
+            # 🚫 DO NOT CHANGE THIS VALUE 🚫
+            # Bybit P2P order/history endpoints fail or return inconsistent data
+            # when requesting more than 10 items per page.
+            # Strict limit: size <= 10. Changing this WILL break data collection!
+            SIZE_ORDERS = "10"
+
             # Orders and grouped orders by status
             order_params = {
-                # "tokenId": TOKEN_ID,   # not required for get_orders; may cause 10001 on some variants
-                "side": side_value,      # scalar, not list
+                "side": int(side_value),
                 "page": "1",
-                "size": "50",
+                "size": SIZE_ORDERS, # STRICT LIMIT — DO NOT EDIT
             }
             orders_resp = call_and_save(
                 client.get_orders,
@@ -197,6 +196,12 @@ def collect() -> None:
                 # Order details & extras for the first order found for this currency
                 if first_order_for_currency:
                     order_id = first_order_for_currency.get("orderId") or first_order_for_currency.get("id")
+
+                    print(f"First order for {currency} on {side_name}: {order_id}")
+                    if not order_id:
+                        print("No order ID found, skipping details collection.")
+                        continue
+                    
                     if order_id:
                         call_and_save(
                             client.get_order_details,
@@ -235,7 +240,7 @@ def collect() -> None:
                     )
                     call_and_save(
                         client.get_chat_messages,
-                        {"orderId": placeholder_id, "startMessageId": 0, "size": 100},
+                        {"orderId": placeholder_id, "startMessageId": "0", "size": "100"},
                         base / "chat_messages" / side_name / currency / "none.json",
                         "Chat messages placeholder",
                     )

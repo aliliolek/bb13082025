@@ -2,7 +2,8 @@
 
 from __future__ import annotations
 
-from typing import Any, Dict, Optional
+from ctypes import Union
+from typing import Any, Dict, List, Optional
 
 from bybit_p2p import P2P
 

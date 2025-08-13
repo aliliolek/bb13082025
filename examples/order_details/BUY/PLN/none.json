@@ -4,6 +4,6 @@
     "orderId": "0"
   },
   "response": {
-    "error": "HTTPSConnectionPool(host='api.bybit.com', port=443): Max retries exceeded with url: /v5/p2p/order/info (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))"
+    "error": "Order does not exist (ErrCode: 41200) (ErrTime: 19:31:11).\nRequest → https://api.bybit.com/v5/p2p/order/info: {\"orderId\": \"0\"}."
   }
 }

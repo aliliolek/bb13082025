@@ -1,11 +1,19 @@
 {
   "description": "Pending orders for SELL USDT",
   "request": {
-    "side": "1",
+    "side": 1,
     "page": "1",
-    "size": "50"
+    "size": "10"
   },
   "response": {
-    "error": "Request parameter error (ErrCode: 40001) (ErrTime: 16:21:54).\nRequest → https://api.bybit.com/v5/p2p/order/pending/simplifyList: {\"side\": \"1\", \"page\": \"1\", \"size\": \"50\"}."
+    "ret_code": 0,
+    "ret_msg": "SUCCESS",
+    "result": {
+      "count": 0,
+      "items": []
+    },
+    "ext_code": "",
+    "ext_info": {},
+    "time_now": "1755113476.662586"
   }
 }
