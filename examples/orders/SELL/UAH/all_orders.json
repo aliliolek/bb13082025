@@ -1,0 +1,14 @@
+{
+  "description": "All orders for SELL USDT",
+  "request": {
+    "tokenId": "USDT",
+    "side": [
+      1
+    ],
+    "page": 1,
+    "size": 50
+  },
+  "response": {
+    "error": "HTTPSConnectionPool(host='api.bybit.com', port=443): Max retries exceeded with url: /v5/p2p/order/simplifyList (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))"
+  }
+}
