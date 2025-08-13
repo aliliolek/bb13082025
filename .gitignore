@@ -2,6 +2,11 @@
 .venv/
 venv/
 
+# Environment variables files
+.env
+.env.*
+!.env.example
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -12,5 +17,20 @@ __pycache__/
 .ruff_cache/
 .mypy_cache/
 
+# Build / distribution
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Logs
+*.log
+
 # macOS
 .DS_Store
+
+# VS Code
+.vscode/
+
+# PyCharm
+.idea/
