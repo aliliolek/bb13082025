@@ -1,0 +1,5 @@
+{
+  "description": "Order details unavailable for SELL USDT in UAH",
+  "request": {},
+  "response": {"error": "network error"}
+}
