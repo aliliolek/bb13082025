@@ -1,0 +1,10 @@
+{
+  "description": "Counterparty info placeholder",
+  "request": {
+    "originalUid": "0",
+    "orderId": "0"
+  },
+  "response": {
+    "error": "HTTPSConnectionPool(host='api.bybit.com', port=443): Max retries exceeded with url: /v5/p2p/user/order/personal/info (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))"
+  }
+}
