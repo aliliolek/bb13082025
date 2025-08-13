@@ -1,6 +1,8 @@
 # Sample App
 
+
 A minimal Python project skeleton that interacts with the Bybit P2P API.
+
 
 ## Setup and Usage
 
@@ -28,3 +30,4 @@ BYBIT_RECV_WINDOW=20000  # optional
 `BYBIT_TESTNET` should be `true` when using the Bybit testnet environment.
 
 `BYBIT_RECV_WINDOW` controls the request receive window in milliseconds.
+

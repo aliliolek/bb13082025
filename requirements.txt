@@ -1,2 +1,2 @@
 python-dotenv
-bybit-p2p
+bybit_p2p==1.1.0
