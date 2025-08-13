@@ -150,11 +150,9 @@ def collect() -> None:
 
             # Orders and grouped orders by status
             order_params = {
-                "tokenId": TOKEN_ID,
-                "currencyId": currency,
-                "side": side_value,
-                "page": 1,
-                "size": 50,
+                "side": str(side_value),
+                "page": "1",
+                "size": "50",
             }
             orders_resp = call_and_save(
                 client.get_orders,
@@ -201,6 +199,7 @@ def collect() -> None:
                 if first_order_for_currency:
                     order_id = first_order_for_currency.get("orderId") or first_order_for_currency.get("id")
                     if order_id:
+                        order_id = str(order_id)
                         details_resp = call_and_save(
                             client.get_order_details,
                             {"orderId": order_id},
@@ -221,7 +220,11 @@ def collect() -> None:
                             )
                         call_and_save(
                             client.get_chat_messages,
-                            {"orderId": order_id, "startMessageId": 0, "size": 100},
+                            {
+                                "orderId": order_id,
+                                "startMessageId": "0",
+                                "size": "100",
+                            },
                             base
                             / "chat_messages"
                             / side_name
@@ -237,18 +240,22 @@ def collect() -> None:
                         base / "order_details" / side_name / currency / "none.json",
                         "Order details placeholder",
                     )
-                    call_and_save(
-                        client.get_counterparty_info,
-                        {"originalUid": "0", "orderId": placeholder_id},
-                        base / "counterparty_info" / side_name / currency / "none.json",
-                        "Counterparty info placeholder",
-                    )
-                    call_and_save(
-                        client.get_chat_messages,
-                        {"orderId": placeholder_id, "startMessageId": 0, "size": 100},
-                        base / "chat_messages" / side_name / currency / "none.json",
-                        "Chat messages placeholder",
-                    )
+                call_and_save(
+                    client.get_counterparty_info,
+                    {"originalUid": "0", "orderId": placeholder_id},
+                    base / "counterparty_info" / side_name / currency / "none.json",
+                    "Counterparty info placeholder",
+                )
+                call_and_save(
+                    client.get_chat_messages,
+                    {
+                        "orderId": placeholder_id,
+                        "startMessageId": "0",
+                        "size": "100",
+                    },
+                    base / "chat_messages" / side_name / currency / "none.json",
+                    "Chat messages placeholder",
+                )
             else:
                 placeholder_id = "0"
                 call_and_save(
@@ -265,7 +272,11 @@ def collect() -> None:
                 )
                 call_and_save(
                     client.get_chat_messages,
-                    {"orderId": placeholder_id, "startMessageId": 0, "size": 100},
+                    {
+                        "orderId": placeholder_id,
+                        "startMessageId": "0",
+                        "size": "100",
+                    },
                     base / "chat_messages" / side_name / currency / "none.json",
                     "Chat messages placeholder",
                 )
