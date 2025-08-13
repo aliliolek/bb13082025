@@ -1,0 +1,175 @@
+{
+  "description": "Ad details for 1952070954403061760",
+  "request": {
+    "itemId": "1952070954403061760"
+  },
+  "response": {
+    "ret_code": 0,
+    "ret_msg": "SUCCESS",
+    "result": {
+      "id": "1952070954403061760",
+      "accountId": "24305226",
+      "userId": "24305224",
+      "nickName": "",
+      "tokenId": "USDT",
+      "tokenName": "USDT",
+      "currencyId": "PLN",
+      "side": 0,
+      "priceType": 0,
+      "price": "3.20",
+      "premium": "0",
+      "lastQuantity": "4900",
+      "quantity": "4900",
+      "frozenQuantity": "0",
+      "executedQuantity": "0",
+      "minAmount": "100.00",
+      "maxAmount": "3600.00",
+      "remark": "test - don't open order          #p #q",
+      "status": 20,
+      "createDate": "1754244959000",
+      "payments": [
+        "159"
+      ],
+      "orderNum": 0,
+      "finishNum": 0,
+      "recentOrderNum": 0,
+      "recentExecuteRate": 0,
+      "fee": "",
+      "isOnline": false,
+      "lastLogoutTime": "0",
+      "symbolInfo": {
+        "id": "45",
+        "exchangeId": "301",
+        "orgId": "9001",
+        "tokenId": "USDT",
+        "currencyId": "PLN",
+        "status": 1,
+        "lowerLimitAlarm": 80,
+        "upperLimitAlarm": 120,
+        "itemDownRange": "80",
+        "itemUpRange": "120",
+        "currencyMinQuote": "10",
+        "currencyMaxQuote": "220000",
+        "currencyLowerMaxQuote": "10",
+        "tokenMinQuote": "1",
+        "tokenMaxQuote": "50000",
+        "kycCurrencyLimit": "0",
+        "itemSideLimit": 3,
+        "buyFeeRate": "",
+        "sellFeeRate": "",
+        "orderAutoCancelMinute": 15,
+        "orderFinishMinute": 10,
+        "tradeSide": 9,
+        "currency": {
+          "id": "35",
+          "exchangeId": "0",
+          "orgId": "9001",
+          "currencyId": "PLN",
+          "scale": 2
+        },
+        "token": {
+          "id": "1",
+          "exchangeId": "0",
+          "orgId": "9001",
+          "tokenId": "USDT",
+          "scale": 4,
+          "sequence": 1
+        },
+        "buyAd": {
+          "paymentPeriods": [
+            15,
+            30
+          ]
+        },
+        "sellAd": {
+          "paymentPeriods": [
+            15,
+            30
+          ]
+        }
+      },
+      "tradingPreferenceSet": {
+        "hasUnPostAd": 0,
+        "isKyc": 1,
+        "isEmail": 0,
+        "isMobile": 0,
+        "hasRegisterTime": 1,
+        "registerTimeThreshold": 90,
+        "orderFinishNumberDay30": 60,
+        "completeRateDay30": "90",
+        "nationalLimit": "AFG,ALB,DZA,ASM,AND,AGO,AIA,ATA,ATG,ARG,ARM,ABW,AUS,AUT,AZE,BHS,BHR,BGD,BRB,BLR,BEL,BLZ,BEN,BMU,BTN,BOL,BIH,BWA,BVT,BRA,IOT,VGB,BRN,BGR,BFA,MMR,BDI,CPV,KHM,CMR,CAN,CYM,CAF,TCD,CHL,CHN,CXR,CCK,COL,COM,COD,COG,COK,CRI,CIV,HRV,CUB,CUW,CYP,CZE,DNK,DJI,DMA,DOM,ECU,EGY,SLV,GNQ,ERI,EST,ETH,FLK,FRO,FJI,FIN,FRA,GUF,PYF,ATF,GAB,GMB,PSE,GEO,DEU,GHA,GIB,GRC,GRL,GRD,GLP,GUM,GTM,GGY,GIN,GNB,GUY,HTI,HMD,VAT,HND,HKG,HUN,ISL,IND,IDN,IRN,IRQ,IRL,IMN,ISR,ITA,JAM,JPN,JEY,JOR,KAZ,KEN,KIR,PRK,KOR,KWT,KGZ,LAO,LVA,LBN,LSO,LBR,LBY,LIE,LTU,LUX,MAC,MKD,MDG,MWI,MYS,MDV,MLI,MLT,MHL,MTQ,MRT,MUS,MYT,MEX,FSM,MDA,MCO,MNG,MNE,MSR,MAR,MOZ,NAM,NRU,NPL,NLD,NCL,NZL,NIC,NER,NGA,NIU,NFK,MNP,NOR,OMN,PAK,PLW,PAN,PNG,PRY,PER,PHL,PCN,PRT,PRI,QAT,REU,ROU,TWN,RUS,RWA,BLM,SHN,KNA,LCA,MAF,VCT,WSM,SMR,STP,SAU,SEN,SRB,SYC,SLE,SGP,SXM,SVK,SVN,SLB,SOM,ZAF,SGS,SSD,ESP,LKA,SDN,SUR,SPM,SWZ,SWE,CHE,SYR,TJK,TZA,THA,TLS,TGO,TKL,TON,TTO,TUN,TUR,TKM,TCA,TUV,UGA,UKR,ARE,GBR,USA,UMI,URY,UZB,VUT,VEN,VNM,VIR,WLF,ESH,YEM,ZMB,ZWE",
+        "hasOrderFinishNumberDay30": 1,
+        "hasCompleteRateDay30": 1,
+        "hasNationalLimit": 1
+      },
+      "paymentTerms": [
+        {
+          "id": "7506140",
+          "realName": "OLEKSII PISHCHUHIN ",
+          "paymentType": 159,
+          "bankName": "+48 781972552",
+          "branchName": " BOBROWE SPRAWY Oleksii Pishchuhin, blik ⤵️ ",
+          "accountNo": "48102018110000010204781565",
+          "qrcode": "",
+          "visible": 1,
+          "payMessage": "",
+          "firstName": "",
+          "lastName": "",
+          "secondLastName": "",
+          "clabe": "",
+          "debitCardNumber": "",
+          "mobile": "",
+          "businessName": "",
+          "concept": "",
+          "paymentExt1": "",
+          "paymentExt2": "",
+          "paymentExt3": "",
+          "paymentExt4": "",
+          "paymentExt5": "",
+          "paymentExt6": "",
+          "paymentTemplateVersion": 3,
+          "paymentConfig": {
+            "paymentType": 159,
+            "paymentName": "PKO Bank",
+            "paymentDialect": "payment_field_159",
+            "paymentTemplateItem": [
+              {
+                "labelDialect": "input_field_realName",
+                "placeholderDialect": "input_tip_realName",
+                "fieldName": "realName"
+              },
+              {
+                "labelDialect": "input_field_accountNo",
+                "placeholderDialect": "input_tip_accountNo",
+                "fieldName": "accountNo"
+              },
+              {
+                "labelDialect": "input_field_branchName",
+                "placeholderDialect": "input_tip_branchName",
+                "fieldName": "branchName"
+              },
+              {
+                "labelDialect": "input_field_bankName",
+                "placeholderDialect": "input_tip_bankName",
+                "fieldName": "bankName"
+              }
+            ]
+          },
+          "realNameVerified": true
+        }
+      ],
+      "version": 2,
+      "updateDate": "1754259736000",
+      "feeRate": "0",
+      "paymentPeriod": 15,
+      "itemType": "ORIGIN",
+      "verificationOrderSwitch": false,
+      "verificationOrderLabels": [],
+      "verificationOrderAmount": "0",
+      "subsidyAd": false
+    },
+    "ext_code": "",
+    "ext_info": {},
+    "time_now": "1755102112.611494"
+  }
+}

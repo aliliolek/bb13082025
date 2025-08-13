@@ -39,7 +39,7 @@ os.environ["HTTPS_PROXY"] = ""
 os.environ["ALL_PROXY"] = ""
 
 
-SIDES = {"BUY": 0, "SELL": 1}
+SIDES = {"BUY": "0", "SELL": "1"} # must be string values "0" or "1"
 CURRENCIES = ["UAH", "PLN"]
 TOKEN_ID = "USDT"
 
@@ -62,9 +62,13 @@ def save_json(path: Path, description: str, request: Dict[str, Any], response: A
 
 def call_and_save(method: Any, params: Dict[str, Any], path: Path, description: str) -> Any:
     """Call ``method`` with ``params`` and persist the response."""
-    try:  # pragma: no cover - network/HTTP errors
+    print(f"\n--- Calling {method.__name__} ---")
+    print(f"Params: {params}")
+    try:
         response = method(**params)
-    except Exception as exc:  # pragma: no cover - network/HTTP errors
+        print(f"Success: {description}")
+    except Exception as exc:
+        print(f"Error in {method.__name__}: {exc}")
         response = {"error": str(exc)}
     save_json(path, description, params, response)
     return response
@@ -121,8 +125,8 @@ def collect() -> None:
                 "tokenId": TOKEN_ID,
                 "currencyId": currency,  # camelCase
                 "side": side_value,      # scalar int (0/1)
-                "page": 1,
-                "size": 10,
+                "page": "1",
+                "size": "10",
             }
             online_resp = call_and_save(
                 client.get_online_ads,
@@ -136,8 +140,8 @@ def collect() -> None:
                 "tokenId": TOKEN_ID,
                 "currencyId": currency,  # camelCase (was currency_id)
                 "side": side_value,
-                "page": 1,
-                "size": 10,
+                "page": "1",
+                "size": "10",
             }
             my_ads_resp = call_and_save(
                 client.get_ads_list,
@@ -150,8 +154,8 @@ def collect() -> None:
             order_params = {
                 # "tokenId": TOKEN_ID,   # not required for get_orders; may cause 10001 on some variants
                 "side": side_value,      # scalar, not list
-                "page": 1,
-                "size": 50,
+                "page": "1",
+                "size": "50",
             }
             orders_resp = call_and_save(
                 client.get_orders,
@@ -210,7 +214,7 @@ def collect() -> None:
                             )
                         call_and_save(
                             client.get_chat_messages,
-                            {"orderId": order_id, "startMessageId": 0, "size": 100},
+                            {"orderId": order_id, "startMessageId": "0", "size": "100"},
                             base / "chat_messages" / side_name / currency / f"{order_id}.json",
                             f"Chat messages for order {order_id}",
                         )

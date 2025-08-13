@@ -4,6 +4,21 @@
     "accountType": "FUND"
   },
   "response": {
-    "error": "HTTPSConnectionPool(host='api.bybit.com', port=443): Max retries exceeded with url: /v5/asset/transfer/query-account-coins-balance?accountType=FUND (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))"
+    "retCode": 0,
+    "retMsg": "success",
+    "result": {
+      "memberId": "24305224",
+      "accountType": "FUND",
+      "balance": [
+        {
+          "coin": "USDT",
+          "transferBalance": "704.1029",
+          "walletBalance": "704.1029",
+          "bonus": ""
+        }
+      ]
+    },
+    "retExtInfo": {},
+    "time": 1755102109570
   }
 }

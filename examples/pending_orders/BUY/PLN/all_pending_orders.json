@@ -1,14 +1,11 @@
 {
   "description": "Pending orders for BUY USDT",
   "request": {
-    "tokenId": "USDT",
-    "side": [
-      0
-    ],
-    "page": 1,
-    "size": 50
+    "side": "0",
+    "page": "1",
+    "size": "50"
   },
   "response": {
-    "error": "HTTPSConnectionPool(host='api.bybit.com', port=443): Max retries exceeded with url: /v5/p2p/order/pending/simplifyList (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))"
+    "error": "Request parameter error (ErrCode: 40001) (ErrTime: 16:21:51).\nRequest → https://api.bybit.com/v5/p2p/order/pending/simplifyList: {\"side\": \"0\", \"page\": \"1\", \"size\": \"50\"}."
   }
 }

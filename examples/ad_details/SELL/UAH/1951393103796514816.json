@@ -1,0 +1,165 @@
+{
+  "description": "Ad details for 1951393103796514816",
+  "request": {
+    "itemId": "1951393103796514816"
+  },
+  "response": {
+    "ret_code": 0,
+    "ret_msg": "SUCCESS",
+    "result": {
+      "id": "1951393103796514816",
+      "accountId": "24305226",
+      "userId": "24305224",
+      "nickName": "",
+      "tokenId": "USDT",
+      "tokenName": "USDT",
+      "currencyId": "UAH",
+      "side": 1,
+      "priceType": 0,
+      "price": "44.97",
+      "premium": "0",
+      "lastQuantity": "0.0001",
+      "quantity": "6101.4515",
+      "frozenQuantity": "0",
+      "executedQuantity": "6101.4514",
+      "minAmount": "39999.00",
+      "maxAmount": "180000.00",
+      "remark": "",
+      "status": 20,
+      "createDate": "1754083346000",
+      "payments": [
+        "624"
+      ],
+      "orderNum": 4,
+      "finishNum": 4,
+      "recentOrderNum": 0,
+      "recentExecuteRate": 0,
+      "fee": "",
+      "isOnline": false,
+      "lastLogoutTime": "0",
+      "symbolInfo": {
+        "id": "8",
+        "exchangeId": "301",
+        "orgId": "9001",
+        "tokenId": "USDT",
+        "currencyId": "UAH",
+        "status": 1,
+        "lowerLimitAlarm": 95,
+        "upperLimitAlarm": 115,
+        "itemDownRange": "85",
+        "itemUpRange": "120",
+        "currencyMinQuote": "100",
+        "currencyMaxQuote": "1800000",
+        "currencyLowerMaxQuote": "100",
+        "tokenMinQuote": "1",
+        "tokenMaxQuote": "50000",
+        "kycCurrencyLimit": "0",
+        "itemSideLimit": 3,
+        "buyFeeRate": "",
+        "sellFeeRate": "",
+        "orderAutoCancelMinute": 15,
+        "orderFinishMinute": 10,
+        "tradeSide": 9,
+        "currency": {
+          "id": "8",
+          "exchangeId": "0",
+          "orgId": "9001",
+          "currencyId": "UAH",
+          "scale": 2
+        },
+        "token": {
+          "id": "1",
+          "exchangeId": "0",
+          "orgId": "9001",
+          "tokenId": "USDT",
+          "scale": 4,
+          "sequence": 1
+        },
+        "buyAd": {
+          "paymentPeriods": [
+            15,
+            30
+          ]
+        },
+        "sellAd": {
+          "paymentPeriods": [
+            15,
+            30
+          ]
+        }
+      },
+      "tradingPreferenceSet": {
+        "hasUnPostAd": 0,
+        "isKyc": 1,
+        "isEmail": 0,
+        "isMobile": 0,
+        "hasRegisterTime": 0,
+        "registerTimeThreshold": 0,
+        "orderFinishNumberDay30": 0,
+        "completeRateDay30": "",
+        "nationalLimit": "",
+        "hasOrderFinishNumberDay30": 0,
+        "hasCompleteRateDay30": 0,
+        "hasNationalLimit": 0
+      },
+      "paymentTerms": [
+        {
+          "id": "12980554",
+          "realName": "OLEKSII PISHCHUHIN",
+          "paymentType": 624,
+          "bankName": "",
+          "branchName": "",
+          "accountNo": "000000000000000000",
+          "qrcode": "",
+          "visible": 1,
+          "payMessage": "",
+          "firstName": "",
+          "lastName": "",
+          "secondLastName": "",
+          "clabe": "",
+          "debitCardNumber": "",
+          "mobile": "",
+          "businessName": "",
+          "concept": "",
+          "paymentExt1": "",
+          "paymentExt2": "",
+          "paymentExt3": "",
+          "paymentExt4": "",
+          "paymentExt5": "",
+          "paymentExt6": "",
+          "paymentTemplateVersion": 1,
+          "paymentConfig": {
+            "paymentType": 624,
+            "paymentName": "Unex Bank",
+            "paymentDialect": "payment_field_UnexBank",
+            "paymentTemplateItem": [
+              {
+                "labelDialect": "input_field_realName",
+                "placeholderDialect": "input_tip_realName",
+                "fieldName": "realName"
+              },
+              {
+                "labelDialect": "input_field_accountNo",
+                "placeholderDialect": "input_tip_accountNo",
+                "fieldName": "accountNo"
+              }
+            ]
+          },
+          "realNameVerified": true
+        }
+      ],
+      "version": 2,
+      "updateDate": "1754085086000",
+      "feeRate": "0",
+      "paymentPeriod": 30,
+      "itemType": "ORIGIN",
+      "verificationOrderSwitch": false,
+      "verificationOrderLabels": [],
+      "verificationOrderAmount": "0",
+      "subsidyAd": false
+    },
+    "ext_code": "",
+    "ext_info": {},
+    "time_now": "1755102113.834664"
+  }
+}

@@ -2,12 +2,2907 @@
   "description": "My advertisements for BUY USDT in UAH",
   "request": {
     "tokenId": "USDT",
-    "currency_id": "UAH",
-    "side": 0,
-    "page": 1,
-    "size": 10
+    "currencyId": "UAH",
+    "side": "0",
+    "page": "1",
+    "size": "10"
   },
   "response": {
-    "error": "HTTPSConnectionPool(host='api.bybit.com', port=443): Max retries exceeded with url: /v5/p2p/item/personal/list (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))"
+    "ret_code": 0,
+    "ret_msg": "SUCCESS",
+    "result": {
+      "count": 205,
+      "items": [
+        {
+          "id": "1955650622853287936",
+          "accountId": "24305226",
+          "userId": "24305224",
+          "nickName": "",
+          "tokenId": "USDT",
+          "tokenName": "USDT",
+          "currencyId": "UAH",
+          "side": 0,
+          "priceType": 0,
+          "price": "42.56",
+          "premium": "0",
+          "lastQuantity": "1.1466",
+          "quantity": "605",
+          "frozenQuantity": "0",
+          "executedQuantity": "603.8534",
+          "minAmount": "25700.00",
+          "maxAmount": "25700.00",
+          "remark": "Отправляю с Абанка доверенного лица, на любой ваш банк",
+          "status": 10,
+          "createDate": "1755098418000",
+          "payments": [
+            "43",
+            "1",
+            "46",
+            "61",
+            "60"
+          ],
+          "orderNum": 1,
+          "finishNum": 1,
+          "recentOrderNum": 0,
+          "recentExecuteRate": 0,
+          "fee": "",
+          "isOnline": false,
+          "lastLogoutTime": "0",
+          "symbolInfo": {
+            "id": "8",
+            "exchangeId": "301",
+            "orgId": "9001",
+            "tokenId": "USDT",
+            "currencyId": "UAH",
+            "status": 1,
+            "lowerLimitAlarm": 95,
+            "upperLimitAlarm": 115,
+            "itemDownRange": "85",
+            "itemUpRange": "120",
+            "currencyMinQuote": "100",
+            "currencyMaxQuote": "1800000",
+            "currencyLowerMaxQuote": "100",
+            "tokenMinQuote": "1",
+            "tokenMaxQuote": "50000",
+            "kycCurrencyLimit": "0",
+            "itemSideLimit": 3,
+            "buyFeeRate": "",
+            "sellFeeRate": "",
+            "orderAutoCancelMinute": 15,
+            "orderFinishMinute": 10,
+            "tradeSide": 9,
+            "currency": {
+              "id": "8",
+              "exchangeId": "0",
+              "orgId": "9001",
+              "currencyId": "UAH",
+              "scale": 2
+            },
+            "token": {
+              "id": "1",
+              "exchangeId": "0",
+              "orgId": "9001",
+              "tokenId": "USDT",
+              "scale": 4,
+              "sequence": 1
+            },
+            "buyAd": {
+              "paymentPeriods": [
+                15,
+                30
+              ]
+            },
+            "sellAd": {
+              "paymentPeriods": [
+                15,
+                30
+              ]
+            }
+          },
+          "tradingPreferenceSet": {
+            "hasUnPostAd": 0,
+            "isKyc": 1,
+            "isEmail": 0,
+            "isMobile": 0,
+            "hasRegisterTime": 0,
+            "registerTimeThreshold": 0,
+            "orderFinishNumberDay30": 0,
+            "completeRateDay30": "",
+            "nationalLimit": "",
+            "hasOrderFinishNumberDay30": 0,
+            "hasCompleteRateDay30": 0,
+            "hasNationalLimit": 0
+          },
+          "paymentTerms": [
+            {
+              "id": "7595504",
+              "realName": "OLEKSII PISHCHUHIN",
+              "paymentType": 43,
+              "bankName": "",
+              "branchName": "чат",
+              "accountNo": "0000 0100 0001 0001",
+              "qrcode": "",
+              "visible": 0,
+              "payMessage": "",
+              "firstName": "",
+              "lastName": "",
+              "secondLastName": "",
+              "clabe": "",
+              "debitCardNumber": "",
+              "mobile": "",
+              "businessName": "",
+              "concept": "",
+              "paymentExt1": "",
+              "paymentExt2": "",
+              "paymentExt3": "",
+              "paymentExt4": "",
+              "paymentExt5": "",
+              "paymentExt6": "",
+              "paymentTemplateVersion": 1,
+              "paymentConfig": {
+                "paymentType": 43,
+                "paymentName": "Monobank",
+                "paymentDialect": "payment_field_43",
+                "paymentTemplateItem": [
+                  {
+                    "labelDialect": "input_field_realName",
+                    "placeholderDialect": "input_tip_realName",
+                    "fieldName": "realName"
+                  },
+                  {
+                    "labelDialect": "input_field_accountNo",
+                    "placeholderDialect": "input_tip_accountNo",
+                    "fieldName": "accountNo"
+                  },
+                  {
+                    "labelDialect": "input_field_branchName",
+                    "placeholderDialect": "input_tip_branchName",
+                    "fieldName": "branchName"
+                  },
+                  {
+                    "labelDialect": "input_field_bankName",
+                    "placeholderDialect": "input_tip_bankName",
+                    "fieldName": "bankName"
+                  }
+                ]
+              },
+              "realNameVerified": true
+            },
+            {
+              "id": "8156271",
+              "realName": "OLEKSII PISHCHUHIN",
+              "paymentType": 1,
+              "bankName": "",
+              "branchName": "в чат",
+              "accountNo": "0000 0000 0000 0000",
+              "qrcode": "",
+              "visible": 0,
+              "payMessage": "",
+              "firstName": "",
+              "lastName": "",
+              "secondLastName": "",
+              "clabe": "",
+              "debitCardNumber": "",
+              "mobile": "",
+              "businessName": "",
+              "concept": "",
+              "paymentExt1": "",
+              "paymentExt2": "",
+              "paymentExt3": "",
+              "paymentExt4": "",
+              "paymentExt5": "",
+              "paymentExt6": "",
+              "paymentTemplateVersion": 1,
+              "paymentConfig": {
+                "paymentType": 1,
+                "paymentName": "A-Bank",
+                "paymentDialect": "payment_field_1",
+                "paymentTemplateItem": [
+                  {
+                    "labelDialect": "input_field_realName",
+                    "placeholderDialect": "input_tip_realName",
+                    "fieldName": "realName"
+                  },
+                  {
+                    "labelDialect": "input_field_accountNo",
+                    "placeholderDialect": "input_tip_accountNo",
+                    "fieldName": "accountNo"
+                  },
+                  {
+                    "labelDialect": "input_field_branchName",
+                    "placeholderDialect": "input_tip_branchName",
+                    "fieldName": "branchName"
+                  },
+                  {
+                    "labelDialect": "input_field_bankName",
+                    "placeholderDialect": "input_tip_bankName",
+                    "fieldName": "bankName"
+                  }
+                ]
+              },
+              "realNameVerified": true
+            },
+            {
+              "id": "1598417",
+              "realName": "OLEKSII PISHCHUHIN",
+              "paymentType": 46,
+              "bankName": "w chat",
+              "branchName": ", ",
+              "accountNo": ", ",
+              "qrcode": "",
+              "visible": 1,
+              "payMessage": "",
+              "firstName": "",
+              "lastName": "",
+              "secondLastName": "",
+              "clabe": "",
+              "debitCardNumber": "",
+              "mobile": "4790729980605844",
+              "businessName": "",
+              "concept": "",
+              "paymentExt1": "4790729980605844",
+              "paymentExt2": "",
+              "paymentExt3": "",
+              "paymentExt4": "",
+              "paymentExt5": "",
+              "paymentExt6": "",
+              "paymentTemplateVersion": 5,
+              "paymentConfig": {
+                "paymentType": 46,
+                "paymentName": "Oschadbank",
+                "paymentDialect": "payment_field_46",
+                "paymentTemplateItem": [
+                  {
+                    "labelDialect": "input_field_accountNo",
+                    "placeholderDialect": "input_tip_accountNo",
+                    "fieldName": "accountNo"
+                  },
+                  {
+                    "labelDialect": "input_field_realName",
+                    "placeholderDialect": "input_tip_realName",
+                    "fieldName": "realName"
+                  },
+                  {
+                    "labelDialect": "input_field_accountNo2",
+                    "placeholderDialect": "input_tip_accountNo2",
+                    "fieldName": "paymentExt1"
+                  },
+                  {
+                    "labelDialect": "input_field_payMessage",
+                    "placeholderDialect": "input_tip_paymentExt4",
+                    "fieldName": "mobile"
+                  }
+                ]
+              },
+              "realNameVerified": true
+            },
+            {
+              "id": "2434416",
+              "realName": "OLEKSII PISHCHUHIN",
+              "paymentType": 61,
+              "bankName": "",
+              "branchName": ",",
+              "accountNo": ",",
+              "qrcode": "",
+              "visible": 1,
+              "payMessage": "",
+              "firstName": "",
+              "lastName": "",
+              "secondLastName": "",
+              "clabe": "",
+              "debitCardNumber": "",
+              "mobile": "",
+              "businessName": "",
+              "concept": "",
+              "paymentExt1": "",
+              "paymentExt2": "",
+              "paymentExt3": "",
+              "paymentExt4": "",
+              "paymentExt5": "",
+              "paymentExt6": "",
+              "paymentTemplateVersion": 1,
+              "paymentConfig": {
+                "paymentType": 61,
+                "paymentName": "PUMB",
+                "paymentDialect": "payment_field_61",
+                "paymentTemplateItem": [
+                  {
+                    "labelDialect": "input_field_realName",
+                    "placeholderDialect": "input_tip_realName",
+                    "fieldName": "realName"
+                  },
+                  {
+                    "labelDialect": "input_field_accountNo",
+                    "placeholderDialect": "input_tip_accountNo",
+                    "fieldName": "accountNo"
+                  },
+                  {
+                    "labelDialect": "input_field_branchName",
+                    "placeholderDialect": "input_tip_branchName",
+                    "fieldName": "branchName"
+                  },
+                  {
+                    "labelDialect": "input_field_bankName",
+                    "placeholderDialect": "input_tip_bankName",
+                    "fieldName": "bankName"
+                  }
+                ]
+              },
+              "realNameVerified": true
+            },
+            {
+              "id": "2434422",
+              "realName": "OLEKSII PISHCHUHIN",
+              "paymentType": 60,
+              "bankName": "",
+              "branchName": ",",
+              "accountNo": ",",
+              "qrcode": "",
+              "visible": 1,
+              "payMessage": "",
+              "firstName": "",
+              "lastName": "",
+              "secondLastName": "",
+              "clabe": "",
+              "debitCardNumber": "",
+              "mobile": "",
+              "businessName": "",
+              "concept": "",
+              "paymentExt1": "",
+              "paymentExt2": "",
+              "paymentExt3": "",
+              "paymentExt4": "",
+              "paymentExt5": "",
+              "paymentExt6": "",
+              "paymentTemplateVersion": 1,
+              "paymentConfig": {
+                "paymentType": 60,
+                "paymentName": "Privat Bank",
+                "paymentDialect": "payment_field_60",
+                "paymentTemplateItem": [
+                  {
+                    "labelDialect": "input_field_realName",
+                    "placeholderDialect": "input_tip_realName",
+                    "fieldName": "realName"
+                  },
+                  {
+                    "labelDialect": "input_field_accountNo",
+                    "placeholderDialect": "input_tip_accountNo",
+                    "fieldName": "accountNo"
+                  },
+                  {
+                    "labelDialect": "input_field_branchName",
+                    "placeholderDialect": "input_tip_branchName",
+                    "fieldName": "branchName"
+                  },
+                  {
+                    "labelDialect": "input_field_bankName",
+                    "placeholderDialect": "input_tip_bankName",
+                    "fieldName": "bankName"
+                  }
+                ]
+              },
+              "realNameVerified": true
+            }
+          ],
+          "version": 2,
+          "updateDate": "1755099763000",
+          "feeRate": "0",
+          "paymentPeriod": 15,
+          "itemType": "ORIGIN",
+          "verificationOrderSwitch": false,
+          "verificationOrderLabels": [],
+          "verificationOrderAmount": "0",
+          "subsidyAd": false
+        },
+        {
+          "id": "1954187116802039808",
+          "accountId": "24305226",
+          "userId": "24305224",
+          "nickName": "",
+          "tokenId": "USDT",
+          "tokenName": "USDT",
+          "currencyId": "UAH",
+          "side": 0,
+          "priceType": 0,
+          "price": "42.39",
+          "premium": "0",
+          "lastQuantity": "120",
+          "quantity": "3947.2494",
+          "frozenQuantity": "0",
+          "executedQuantity": "3827.2494",
+          "minAmount": "4600.00",
+          "maxAmount": "4600.00",
+          "remark": "ПЕРЕКАЗУЮ З ОЩАДБАНКУ тільки на ОЩАД , від довіренних осіб, ДЕКІЛЬКОМА ПЛАТЕЖАМИ,   якщо треба квитанціі пишіть дам! Якщо не влаштовує не відкривайте ордер !!!",
+          "status": 20,
+          "createDate": "1754749491000",
+          "payments": [
+            "46"
+          ],
+          "orderNum": 25,
+          "finishNum": 25,
+          "recentOrderNum": 0,
+          "recentExecuteRate": 0,
+          "fee": "",
+          "isOnline": false,
+          "lastLogoutTime": "0",
+          "symbolInfo": {
+            "id": "8",
+            "exchangeId": "301",
+            "orgId": "9001",
+            "tokenId": "USDT",
+            "currencyId": "UAH",
+            "status": 1,
+            "lowerLimitAlarm": 95,
+            "upperLimitAlarm": 115,
+            "itemDownRange": "85",
+            "itemUpRange": "120",
+            "currencyMinQuote": "100",
+            "currencyMaxQuote": "1800000",
+            "currencyLowerMaxQuote": "100",
+            "tokenMinQuote": "1",
+            "tokenMaxQuote": "50000",
+            "kycCurrencyLimit": "0",
+            "itemSideLimit": 3,
+            "buyFeeRate": "",
+            "sellFeeRate": "",
+            "orderAutoCancelMinute": 15,
+            "orderFinishMinute": 10,
+            "tradeSide": 9,
+            "currency": {
+              "id": "8",
+              "exchangeId": "0",
+              "orgId": "9001",
+              "currencyId": "UAH",
+              "scale": 2
+            },
+            "token": {
+              "id": "1",
+              "exchangeId": "0",
+              "orgId": "9001",
+              "tokenId": "USDT",
+              "scale": 4,
+              "sequence": 1
+            },
+            "buyAd": {
+              "paymentPeriods": [
+                15,
+                30
+              ]
+            },
+            "sellAd": {
+              "paymentPeriods": [
+                15,
+                30
+              ]
+            }
+          },
+          "tradingPreferenceSet": {
+            "hasUnPostAd": 0,
+            "isKyc": 1,
+            "isEmail": 0,
+            "isMobile": 0,
+            "hasRegisterTime": 0,
+            "registerTimeThreshold": 0,
+            "orderFinishNumberDay30": 0,
+            "completeRateDay30": "",
+            "nationalLimit": "",
+            "hasOrderFinishNumberDay30": 0,
+            "hasCompleteRateDay30": 0,
+            "hasNationalLimit": 0
+          },
+          "paymentTerms": [
+            {
+              "id": "1598417",
+              "realName": "OLEKSII PISHCHUHIN",
+              "paymentType": 46,
+              "bankName": "w chat",
+              "branchName": ", ",
+              "accountNo": ", ",
+              "qrcode": "",
+              "visible": 1,
+              "payMessage": "",
+              "firstName": "",
+              "lastName": "",
+              "secondLastName": "",
+              "clabe": "",
+              "debitCardNumber": "",
+              "mobile": "4790729980605844",
+              "businessName": "",
+              "concept": "",
+              "paymentExt1": "4790729980605844",
+              "paymentExt2": "",
+              "paymentExt3": "",
+              "paymentExt4": "",
+              "paymentExt5": "",
+              "paymentExt6": "",
+              "paymentTemplateVersion": 5,
+              "paymentConfig": {
+                "paymentType": 46,
+                "paymentName": "Oschadbank",
+                "paymentDialect": "payment_field_46",
+                "paymentTemplateItem": [
+                  {
+                    "labelDialect": "input_field_accountNo",
+                    "placeholderDialect": "input_tip_accountNo",
+                    "fieldName": "accountNo"
+                  },
+                  {
+                    "labelDialect": "input_field_realName",
+                    "placeholderDialect": "input_tip_realName",
+                    "fieldName": "realName"
+                  },
+                  {
+                    "labelDialect": "input_field_accountNo2",
+                    "placeholderDialect": "input_tip_accountNo2",
+                    "fieldName": "paymentExt1"
+                  },
+                  {
+                    "labelDialect": "input_field_payMessage",
+                    "placeholderDialect": "input_tip_paymentExt4",
+                    "fieldName": "mobile"
+                  }
+                ]
+              },
+              "realNameVerified": true
+            }
+          ],
+          "version": 2,
+          "updateDate": "1755098236000",
+          "feeRate": "0",
+          "paymentPeriod": 30,
+          "itemType": "ORIGIN",
+          "verificationOrderSwitch": false,
+          "verificationOrderLabels": [],
+          "verificationOrderAmount": "0",
+          "subsidyAd": false
+        },
+        {
+          "id": "1840063218519638016",
+          "accountId": "24305226",
+          "userId": "24305224",
+          "nickName": "",
+          "tokenId": "USDT",
+          "tokenName": "USDT",
+          "currencyId": "UAH",
+          "side": 0,
+          "priceType": 0,
+          "price": "42.06",
+          "premium": "0",
+          "lastQuantity": "10.4957",
+          "quantity": "469.95",
+          "frozenQuantity": "0",
+          "executedQuantity": "459.4543",
+          "minAmount": "5000.00",
+          "maxAmount": "180000.00",
+          "remark": "будь куди без комісій будь кому швидко , нормально відправляю на карту в чат . сьогодні навіть  Прізвище моє) за номером картки без проблем - одним переказом ціла сума ",
+          "status": 20,
+          "createDate": "1727540233000",
+          "payments": [
+            "14",
+            "43",
+            "61"
+          ],
+          "orderNum": 34,
+          "finishNum": 34,
+          "recentOrderNum": 0,
+          "recentExecuteRate": 0,
+          "fee": "",
+          "isOnline": false,
+          "lastLogoutTime": "0",
+          "symbolInfo": {
+            "id": "8",
+            "exchangeId": "301",
+            "orgId": "9001",
+            "tokenId": "USDT",
+            "currencyId": "UAH",
+            "status": 1,
+            "lowerLimitAlarm": 95,
+            "upperLimitAlarm": 115,
+            "itemDownRange": "85",
+            "itemUpRange": "120",
+            "currencyMinQuote": "100",
+            "currencyMaxQuote": "1800000",
+            "currencyLowerMaxQuote": "100",
+            "tokenMinQuote": "1",
+            "tokenMaxQuote": "50000",
+            "kycCurrencyLimit": "0",
+            "itemSideLimit": 3,
+            "buyFeeRate": "",
+            "sellFeeRate": "",
+            "orderAutoCancelMinute": 15,
+            "orderFinishMinute": 10,
+            "tradeSide": 9,
+            "currency": {
+              "id": "8",
+              "exchangeId": "0",
+              "orgId": "9001",
+              "currencyId": "UAH",
+              "scale": 2
+            },
+            "token": {
+              "id": "1",
+              "exchangeId": "0",
+              "orgId": "9001",
+              "tokenId": "USDT",
+              "scale": 4,
+              "sequence": 1
+            },
+            "buyAd": {
+              "paymentPeriods": [
+                15,
+                30
+              ]
+            },
+            "sellAd": {
+              "paymentPeriods": [
+                15,
+                30
+              ]
+            }
+          },
+          "tradingPreferenceSet": {
+            "hasUnPostAd": 0,
+            "isKyc": 1,
+            "isEmail": 0,
+            "isMobile": 0,
+            "hasRegisterTime": 0,
+            "registerTimeThreshold": 0,
+            "orderFinishNumberDay30": 0,
+            "completeRateDay30": "",
+            "nationalLimit": "",
+            "hasOrderFinishNumberDay30": 0,
+            "hasCompleteRateDay30": 0,
+            "hasNationalLimit": 0
+          },
+          "paymentTerms": [
+            {
+              "id": "7595485",
+              "realName": "OLEKSII PISHCHUHIN",
+              "paymentType": 14,
+              "bankName": "чат ",
+              "branchName": "чат",
+              "accountNo": "0000 0000 0000 0000",
+              "qrcode": "",
+              "visible": 0,
+              "payMessage": "",
+              "firstName": "",
+              "lastName": "",
+              "secondLastName": "",
+              "clabe": "",
+              "debitCardNumber": "",
+              "mobile": "",
+              "businessName": "",
+              "concept": "",
+              "paymentExt1": "",
+              "paymentExt2": "",
+              "paymentExt3": "",
+              "paymentExt4": "",
+              "paymentExt5": "",
+              "paymentExt6": "",
+              "paymentTemplateVersion": 1,
+              "paymentConfig": {
+                "paymentType": 14,
+                "paymentName": "Bank Transfer",
+                "paymentDialect": "payment_field_14",
+                "paymentTemplateItem": [
+                  {
+                    "labelDialect": "input_field_realName",
+                    "placeholderDialect": "input_tip_realName",
+                    "fieldName": "realName"
+                  },
+                  {
+                    "labelDialect": "input_field_accountNo",
+                    "placeholderDialect": "input_tip_accountNo",
+                    "fieldName": "accountNo"
+                  },
+                  {
+                    "labelDialect": "input_field_branchName",
+                    "placeholderDialect": "input_tip_branchName",
+                    "fieldName": "branchName"
+                  },
+                  {
+                    "labelDialect": "input_field_bankName",
+                    "placeholderDialect": "input_tip_bankName",
+                    "fieldName": "bankName"
+                  }
+                ]
+              },
+              "realNameVerified": true
+            },
+            {
+              "id": "7595504",
+              "realName": "OLEKSII PISHCHUHIN",
+              "paymentType": 43,
+              "bankName": "",
+              "branchName": "чат",
+              "accountNo": "0000 0100 0001 0001",
+              "qrcode": "",
+              "visible": 0,
+              "payMessage": "",
+              "firstName": "",
+              "lastName": "",
+              "secondLastName": "",
+              "clabe": "",
+              "debitCardNumber": "",
+              "mobile": "",
+              "businessName": "",
+              "concept": "",
+              "paymentExt1": "",
+              "paymentExt2": "",
+              "paymentExt3": "",
+              "paymentExt4": "",
+              "paymentExt5": "",
+              "paymentExt6": "",
+              "paymentTemplateVersion": 1,
+              "paymentConfig": {
+                "paymentType": 43,
+                "paymentName": "Monobank",
+                "paymentDialect": "payment_field_43",
+                "paymentTemplateItem": [
+                  {
+                    "labelDialect": "input_field_realName",
+                    "placeholderDialect": "input_tip_realName",
+                    "fieldName": "realName"
+                  },
+                  {
+                    "labelDialect": "input_field_accountNo",
+                    "placeholderDialect": "input_tip_accountNo",
+                    "fieldName": "accountNo"
+                  },
+                  {
+                    "labelDialect": "input_field_branchName",
+                    "placeholderDialect": "input_tip_branchName",
+                    "fieldName": "branchName"
+                  },
+                  {
+                    "labelDialect": "input_field_bankName",
+                    "placeholderDialect": "input_tip_bankName",
+                    "fieldName": "bankName"
+                  }
+                ]
+              },
+              "realNameVerified": true
+            },
+            {
+              "id": "2434416",
+              "realName": "OLEKSII PISHCHUHIN",
+              "paymentType": 61,
+              "bankName": "",
+              "branchName": ",",
+              "accountNo": ",",
+              "qrcode": "",
+              "visible": 1,
+              "payMessage": "",
+              "firstName": "",
+              "lastName": "",
+              "secondLastName": "",
+              "clabe": "",
+              "debitCardNumber": "",
+              "mobile": "",
+              "businessName": "",
+              "concept": "",
+              "paymentExt1": "",
+              "paymentExt2": "",
+              "paymentExt3": "",
+              "paymentExt4": "",
+              "paymentExt5": "",
+              "paymentExt6": "",
+              "paymentTemplateVersion": 1,
+              "paymentConfig": {
+                "paymentType": 61,
+                "paymentName": "PUMB",
+                "paymentDialect": "payment_field_61",
+                "paymentTemplateItem": [
+                  {
+                    "labelDialect": "input_field_realName",
+                    "placeholderDialect": "input_tip_realName",
+                    "fieldName": "realName"
+                  },
+                  {
+                    "labelDialect": "input_field_accountNo",
+                    "placeholderDialect": "input_tip_accountNo",
+                    "fieldName": "accountNo"
+                  },
+                  {
+                    "labelDialect": "input_field_branchName",
+                    "placeholderDialect": "input_tip_branchName",
+                    "fieldName": "branchName"
+                  },
+                  {
+                    "labelDialect": "input_field_bankName",
+                    "placeholderDialect": "input_tip_bankName",
+                    "fieldName": "bankName"
+                  }
+                ]
+              },
+              "realNameVerified": true
+            }
+          ],
+          "version": 2,
+          "updateDate": "1740311852000",
+          "feeRate": "0",
+          "paymentPeriod": 30,
+          "itemType": "ORIGIN",
+          "verificationOrderSwitch": false,
+          "verificationOrderLabels": [],
+          "verificationOrderAmount": "0",
+          "subsidyAd": false
+        },
+        {
+          "id": "1827762973475635200",
+          "accountId": "24305226",
+          "userId": "24305224",
+          "nickName": "",
+          "tokenId": "USDT",
+          "tokenName": "USDT",
+          "currencyId": "UAH",
+          "side": 0,
+          "priceType": 0,
+          "price": "42.70",
+          "premium": "0",
+          "lastQuantity": "39.8125",
+          "quantity": "960.9804",
+          "frozenQuantity": "0",
+          "executedQuantity": "921.1679",
+          "minAmount": "3000.00",
+          "maxAmount": "1800000.00",
+          "remark": "будь куди без комісій будь кому швидко, сьогодні навіть прізвище моє ",
+          "status": 20,
+          "createDate": "1724607626000",
+          "payments": [
+            "14",
+            "43",
+            "61",
+            "60",
+            "545"
+          ],
+          "orderNum": 12,
+          "finishNum": 12,
+          "recentOrderNum": 0,
+          "recentExecuteRate": 0,
+          "fee": "",
+          "isOnline": false,
+          "lastLogoutTime": "0",
+          "symbolInfo": {
+            "id": "8",
+            "exchangeId": "301",
+            "orgId": "9001",
+            "tokenId": "USDT",
+            "currencyId": "UAH",
+            "status": 1,
+            "lowerLimitAlarm": 95,
+            "upperLimitAlarm": 115,
+            "itemDownRange": "85",
+            "itemUpRange": "120",
+            "currencyMinQuote": "100",
+            "currencyMaxQuote": "1800000",
+            "currencyLowerMaxQuote": "100",
+            "tokenMinQuote": "1",
+            "tokenMaxQuote": "50000",
+            "kycCurrencyLimit": "0",
+            "itemSideLimit": 3,
+            "buyFeeRate": "",
+            "sellFeeRate": "",
+            "orderAutoCancelMinute": 15,
+            "orderFinishMinute": 10,
+            "tradeSide": 9,
+            "currency": {
+              "id": "8",
+              "exchangeId": "0",
+              "orgId": "9001",
+              "currencyId": "UAH",
+              "scale": 2
+            },
+            "token": {
+              "id": "1",
+              "exchangeId": "0",
+              "orgId": "9001",
+              "tokenId": "USDT",
+              "scale": 4,
+              "sequence": 1
+            },
+            "buyAd": {
+              "paymentPeriods": [
+                15,
+                30
+              ]
+            },
+            "sellAd": {
+              "paymentPeriods": [
+                15,
+                30
+              ]
+            }
+          },
+          "tradingPreferenceSet": {
+            "hasUnPostAd": 0,
+            "isKyc": 1,
+            "isEmail": 0,
+            "isMobile": 0,
+            "hasRegisterTime": 0,
+            "registerTimeThreshold": 0,
+            "orderFinishNumberDay30": 0,
+            "completeRateDay30": "",
+            "nationalLimit": "",
+            "hasOrderFinishNumberDay30": 0,
+            "hasCompleteRateDay30": 0,
+            "hasNationalLimit": 0
+          },
+          "paymentTerms": [
+            {
+              "id": "1545287",
+              "realName": "OLEKSII PISHCHUHIN",
+              "paymentType": 14,
+              "bankName": ",",
+              "branchName": ",",
+              "accountNo": ",",
+              "qrcode": "",
+              "visible": 1,
+              "payMessage": "",
+              "firstName": "",
+              "lastName": "",
+              "secondLastName": "",
+              "clabe": "",
+              "debitCardNumber": "",
+              "mobile": "",
+              "businessName": "",
+              "concept": "",
+              "paymentExt1": "",
+              "paymentExt2": "",
+              "paymentExt3": "",
+              "paymentExt4": "",
+              "paymentExt5": "",
+              "paymentExt6": "",
+              "paymentTemplateVersion": 1,
+              "paymentConfig": {
+                "paymentType": 14,
+                "paymentName": "Bank Transfer",
+                "paymentDialect": "payment_field_14",
+                "paymentTemplateItem": [
+                  {
+                    "labelDialect": "input_field_realName",
+                    "placeholderDialect": "input_tip_realName",
+                    "fieldName": "realName"
+                  },
+                  {
+                    "labelDialect": "input_field_accountNo",
+                    "placeholderDialect": "input_tip_accountNo",
+                    "fieldName": "accountNo"
+                  },
+                  {
+                    "labelDialect": "input_field_branchName",
+                    "placeholderDialect": "input_tip_branchName",
+                    "fieldName": "branchName"
+                  },
+                  {
+                    "labelDialect": "input_field_bankName",
+                    "placeholderDialect": "input_tip_bankName",
+                    "fieldName": "bankName"
+                  }
+                ]
+              },
+              "realNameVerified": true
+            },
+            {
+              "id": "1984674",
+              "realName": "OLEKSII PISHCHUHIN",
+              "paymentType": 43,
+              "bankName": "",
+              "branchName": ",",
+              "accountNo": ",",
+              "qrcode": "",
+              "visible": 1,
+              "payMessage": "",
+              "firstName": "",
+              "lastName": "",
+              "secondLastName": "",
+              "clabe": "",
+              "debitCardNumber": "",
+              "mobile": "",
+              "businessName": "",
+              "concept": "",
+              "paymentExt1": "",
+              "paymentExt2": "",
+              "paymentExt3": "",
+              "paymentExt4": "",
+              "paymentExt5": "",
+              "paymentExt6": "",
+              "paymentTemplateVersion": 1,
+              "paymentConfig": {
+                "paymentType": 43,
+                "paymentName": "Monobank",
+                "paymentDialect": "payment_field_43",
+                "paymentTemplateItem": [
+                  {
+                    "labelDialect": "input_field_realName",
+                    "placeholderDialect": "input_tip_realName",
+                    "fieldName": "realName"
+                  },
+                  {
+                    "labelDialect": "input_field_accountNo",
+                    "placeholderDialect": "input_tip_accountNo",
+                    "fieldName": "accountNo"
+                  },
+                  {
+                    "labelDialect": "input_field_branchName",
+                    "placeholderDialect": "input_tip_branchName",
+                    "fieldName": "branchName"
+                  },
+                  {
+                    "labelDialect": "input_field_bankName",
+                    "placeholderDialect": "input_tip_bankName",
+                    "fieldName": "bankName"
+                  }
+                ]
+              },
+              "realNameVerified": true
+            },
+            {
+              "id": "2434416",
+              "realName": "OLEKSII PISHCHUHIN",
+              "paymentType": 61,
+              "bankName": "",
+              "branchName": ",",
+              "accountNo": ",",
+              "qrcode": "",
+              "visible": 1,
+              "payMessage": "",
+              "firstName": "",
+              "lastName": "",
+              "secondLastName": "",
+              "clabe": "",
+              "debitCardNumber": "",
+              "mobile": "",
+              "businessName": "",
+              "concept": "",
+              "paymentExt1": "",
+              "paymentExt2": "",
+              "paymentExt3": "",
+              "paymentExt4": "",
+              "paymentExt5": "",
+              "paymentExt6": "",
+              "paymentTemplateVersion": 1,
+              "paymentConfig": {
+                "paymentType": 61,
+                "paymentName": "PUMB",
+                "paymentDialect": "payment_field_61",
+                "paymentTemplateItem": [
+                  {
+                    "labelDialect": "input_field_realName",
+                    "placeholderDialect": "input_tip_realName",
+                    "fieldName": "realName"
+                  },
+                  {
+                    "labelDialect": "input_field_accountNo",
+                    "placeholderDialect": "input_tip_accountNo",
+                    "fieldName": "accountNo"
+                  },
+                  {
+                    "labelDialect": "input_field_branchName",
+                    "placeholderDialect": "input_tip_branchName",
+                    "fieldName": "branchName"
+                  },
+                  {
+                    "labelDialect": "input_field_bankName",
+                    "placeholderDialect": "input_tip_bankName",
+                    "fieldName": "bankName"
+                  }
+                ]
+              },
+              "realNameVerified": true
+            },
+            {
+              "id": "2434422",
+              "realName": "OLEKSII PISHCHUHIN",
+              "paymentType": 60,
+              "bankName": "",
+              "branchName": ",",
+              "accountNo": ",",
+              "qrcode": "",
+              "visible": 1,
+              "payMessage": "",
+              "firstName": "",
+              "lastName": "",
+              "secondLastName": "",
+              "clabe": "",
+              "debitCardNumber": "",
+              "mobile": "",
+              "businessName": "",
+              "concept": "",
+              "paymentExt1": "",
+              "paymentExt2": "",
+              "paymentExt3": "",
+              "paymentExt4": "",
+              "paymentExt5": "",
+              "paymentExt6": "",
+              "paymentTemplateVersion": 1,
+              "paymentConfig": {
+                "paymentType": 60,
+                "paymentName": "Privat Bank",
+                "paymentDialect": "payment_field_60",
+                "paymentTemplateItem": [
+                  {
+                    "labelDialect": "input_field_realName",
+                    "placeholderDialect": "input_tip_realName",
+                    "fieldName": "realName"
+                  },
+                  {
+                    "labelDialect": "input_field_accountNo",
+                    "placeholderDialect": "input_tip_accountNo",
+                    "fieldName": "accountNo"
+                  },
+                  {
+                    "labelDialect": "input_field_branchName",
+                    "placeholderDialect": "input_tip_branchName",
+                    "fieldName": "branchName"
+                  },
+                  {
+                    "labelDialect": "input_field_bankName",
+                    "placeholderDialect": "input_tip_bankName",
+                    "fieldName": "bankName"
+                  }
+                ]
+              },
+              "realNameVerified": true
+            },
+            {
+              "id": "2434429",
+              "realName": "OLEKSII PISHCHUHIN",
+              "paymentType": 545,
+              "bankName": "",
+              "branchName": "",
+              "accountNo": ",",
+              "qrcode": "",
+              "visible": 1,
+              "payMessage": "",
+              "firstName": "",
+              "lastName": "",
+              "secondLastName": "",
+              "clabe": "",
+              "debitCardNumber": "",
+              "mobile": "",
+              "businessName": "",
+              "concept": "",
+              "paymentExt1": "",
+              "paymentExt2": "",
+              "paymentExt3": "",
+              "paymentExt4": "",
+              "paymentExt5": "",
+              "paymentExt6": "",
+              "paymentTemplateVersion": 1,
+              "paymentConfig": {
+                "paymentType": 545,
+                "paymentName": "Bank Vlasnyi Rakhunok",
+                "paymentDialect": "payment_field_Bank Vlasnyi Rakhunok",
+                "paymentTemplateItem": [
+                  {
+                    "labelDialect": "input_field_realName",
+                    "placeholderDialect": "input_tip_realName",
+                    "fieldName": "realName"
+                  },
+                  {
+                    "labelDialect": "input_field_accountNo",
+                    "placeholderDialect": "input_tip_accountNo",
+                    "fieldName": "accountNo"
+                  },
+                  {
+                    "labelDialect": "input_field_branchName",
+                    "placeholderDialect": "input_tip_branchName",
+                    "fieldName": "branchName"
+                  },
+                  {
+                    "labelDialect": "input_field_bankName",
+                    "placeholderDialect": "input_tip_bankName",
+                    "fieldName": "bankName"
+                  }
+                ]
+              },
+              "realNameVerified": true
+            }
+          ],
+          "version": 2,
+          "updateDate": "1727036927000",
+          "feeRate": "0",
+          "paymentPeriod": 30,
+          "itemType": "ORIGIN",
+          "verificationOrderSwitch": false,
+          "verificationOrderLabels": [],
+          "verificationOrderAmount": "",
+          "subsidyAd": false
+        },
+        {
+          "id": "1824055541639491584",
+          "accountId": "24305226",
+          "userId": "24305224",
+          "nickName": "",
+          "tokenId": "USDT",
+          "tokenName": "USDT",
+          "currencyId": "UAH",
+          "side": 0,
+          "priceType": 0,
+          "price": "42.74",
+          "premium": "0",
+          "lastQuantity": "2005",
+          "quantity": "4183.5021",
+          "frozenQuantity": "0",
+          "executedQuantity": "2178.5021",
+          "minAmount": "80000.00",
+          "maxAmount": "180000.00",
+          "remark": "Плачу від 3іх з різних банків\nКомісій не беру, комісій не плачу \nРізні люди, різні суми \nБудь куди без комісій \nДокази даю \nЗавжди на зв'язку \nТг prodamsaraj",
+          "status": 20,
+          "createDate": "1723723705000",
+          "payments": [
+            "14",
+            "46",
+            "64",
+            "43",
+            "61"
+          ],
+          "orderNum": 4,
+          "finishNum": 4,
+          "recentOrderNum": 0,
+          "recentExecuteRate": 0,
+          "fee": "",
+          "isOnline": false,
+          "lastLogoutTime": "0",
+          "symbolInfo": {
+            "id": "8",
+            "exchangeId": "301",
+            "orgId": "9001",
+            "tokenId": "USDT",
+            "currencyId": "UAH",
+            "status": 1,
+            "lowerLimitAlarm": 95,
+            "upperLimitAlarm": 115,
+            "itemDownRange": "85",
+            "itemUpRange": "120",
+            "currencyMinQuote": "100",
+            "currencyMaxQuote": "1800000",
+            "currencyLowerMaxQuote": "100",
+            "tokenMinQuote": "1",
+            "tokenMaxQuote": "50000",
+            "kycCurrencyLimit": "0",
+            "itemSideLimit": 3,
+            "buyFeeRate": "",
+            "sellFeeRate": "",
+            "orderAutoCancelMinute": 15,
+            "orderFinishMinute": 10,
+            "tradeSide": 9,
+            "currency": {
+              "id": "8",
+              "exchangeId": "0",
+              "orgId": "9001",
+              "currencyId": "UAH",
+              "scale": 2
+            },
+            "token": {
+              "id": "1",
+              "exchangeId": "0",
+              "orgId": "9001",
+              "tokenId": "USDT",
+              "scale": 4,
+              "sequence": 1
+            },
+            "buyAd": {
+              "paymentPeriods": [
+                15,
+                30
+              ]
+            },
+            "sellAd": {
+              "paymentPeriods": [
+                15,
+                30
+              ]
+            }
+          },
+          "tradingPreferenceSet": {
+            "hasUnPostAd": 0,
+            "isKyc": 1,
+            "isEmail": 0,
+            "isMobile": 0,
+            "hasRegisterTime": 0,
+            "registerTimeThreshold": 0,
+            "orderFinishNumberDay30": 0,
+            "completeRateDay30": "",
+            "nationalLimit": "",
+            "hasOrderFinishNumberDay30": 0,
+            "hasCompleteRateDay30": 0,
+            "hasNationalLimit": 0
+          },
+          "paymentTerms": [
+            {
+              "id": "1545287",
+              "realName": "OLEKSII PISHCHUHIN",
+              "paymentType": 14,
+              "bankName": ",",
+              "branchName": ",",
+              "accountNo": ",",
+              "qrcode": "",
+              "visible": 1,
+              "payMessage": "",
+              "firstName": "",
+              "lastName": "",
+              "secondLastName": "",
+              "clabe": "",
+              "debitCardNumber": "",
+              "mobile": "",
+              "businessName": "",
+              "concept": "",
+              "paymentExt1": "",
+              "paymentExt2": "",
+              "paymentExt3": "",
+              "paymentExt4": "",
+              "paymentExt5": "",
+              "paymentExt6": "",
+              "paymentTemplateVersion": 1,
+              "paymentConfig": {
+                "paymentType": 14,
+                "paymentName": "Bank Transfer",
+                "paymentDialect": "payment_field_14",
+                "paymentTemplateItem": [
+                  {
+                    "labelDialect": "input_field_realName",
+                    "placeholderDialect": "input_tip_realName",
+                    "fieldName": "realName"
+                  },
+                  {
+                    "labelDialect": "input_field_accountNo",
+                    "placeholderDialect": "input_tip_accountNo",
+                    "fieldName": "accountNo"
+                  },
+                  {
+                    "labelDialect": "input_field_branchName",
+                    "placeholderDialect": "input_tip_branchName",
+                    "fieldName": "branchName"
+                  },
+                  {
+                    "labelDialect": "input_field_bankName",
+                    "placeholderDialect": "input_tip_bankName",
+                    "fieldName": "bankName"
+                  }
+                ]
+              },
+              "realNameVerified": true
+            },
+            {
+              "id": "1598417",
+              "realName": "OLEKSII PISHCHUHIN",
+              "paymentType": 46,
+              "bankName": "w chat",
+              "branchName": ", ",
+              "accountNo": ", ",
+              "qrcode": "",
+              "visible": 1,
+              "payMessage": "",
+              "firstName": "",
+              "lastName": "",
+              "secondLastName": "",
+              "clabe": "",
+              "debitCardNumber": "",
+              "mobile": "4790729980605844",
+              "businessName": "",
+              "concept": "",
+              "paymentExt1": "4790729980605844",
+              "paymentExt2": "",
+              "paymentExt3": "",
+              "paymentExt4": "",
+              "paymentExt5": "",
+              "paymentExt6": "",
+              "paymentTemplateVersion": 5,
+              "paymentConfig": {
+                "paymentType": 46,
+                "paymentName": "Oschadbank",
+                "paymentDialect": "payment_field_46",
+                "paymentTemplateItem": [
+                  {
+                    "labelDialect": "input_field_accountNo",
+                    "placeholderDialect": "input_tip_accountNo",
+                    "fieldName": "accountNo"
+                  },
+                  {
+                    "labelDialect": "input_field_realName",
+                    "placeholderDialect": "input_tip_realName",
+                    "fieldName": "realName"
+                  },
+                  {
+                    "labelDialect": "input_field_accountNo2",
+                    "placeholderDialect": "input_tip_accountNo2",
+                    "fieldName": "paymentExt1"
+                  },
+                  {
+                    "labelDialect": "input_field_payMessage",
+                    "placeholderDialect": "input_tip_paymentExt4",
+                    "fieldName": "mobile"
+                  }
+                ]
+              },
+              "realNameVerified": true
+            },
+            {
+              "id": "1598694",
+              "realName": "OLEKSII PISHCHUHIN",
+              "paymentType": 64,
+              "bankName": "",
+              "branchName": "",
+              "accountNo": ",",
+              "qrcode": "",
+              "visible": 1,
+              "payMessage": "",
+              "firstName": "",
+              "lastName": "",
+              "secondLastName": "",
+              "clabe": "",
+              "debitCardNumber": "",
+              "mobile": "",
+              "businessName": "",
+              "concept": "",
+              "paymentExt1": "",
+              "paymentExt2": "",
+              "paymentExt3": "",
+              "paymentExt4": "",
+              "paymentExt5": "",
+              "paymentExt6": "",
+              "paymentTemplateVersion": 1,
+              "paymentConfig": {
+                "paymentType": 64,
+                "paymentName": "Raiffeisenbank",
+                "paymentDialect": "payment_field_64",
+                "paymentTemplateItem": [
+                  {
+                    "labelDialect": "input_field_realName",
+                    "placeholderDialect": "input_tip_realName",
+                    "fieldName": "realName"
+                  },
+                  {
+                    "labelDialect": "input_field_accountNo",
+                    "placeholderDialect": "input_tip_accountNo",
+                    "fieldName": "accountNo"
+                  },
+                  {
+                    "labelDialect": "input_field_branchName",
+                    "placeholderDialect": "input_tip_branchName",
+                    "fieldName": "branchName"
+                  },
+                  {
+                    "labelDialect": "input_field_bankName",
+                    "placeholderDialect": "input_tip_bankName",
+                    "fieldName": "bankName"
+                  }
+                ]
+              },
+              "realNameVerified": true
+            },
+            {
+              "id": "1984674",
+              "realName": "OLEKSII PISHCHUHIN",
+              "paymentType": 43,
+              "bankName": "",
+              "branchName": ",",
+              "accountNo": ",",
+              "qrcode": "",
+              "visible": 1,
+              "payMessage": "",
+              "firstName": "",
+              "lastName": "",
+              "secondLastName": "",
+              "clabe": "",
+              "debitCardNumber": "",
+              "mobile": "",
+              "businessName": "",
+              "concept": "",
+              "paymentExt1": "",
+              "paymentExt2": "",
+              "paymentExt3": "",
+              "paymentExt4": "",
+              "paymentExt5": "",
+              "paymentExt6": "",
+              "paymentTemplateVersion": 1,
+              "paymentConfig": {
+                "paymentType": 43,
+                "paymentName": "Monobank",
+                "paymentDialect": "payment_field_43",
+                "paymentTemplateItem": [
+                  {
+                    "labelDialect": "input_field_realName",
+                    "placeholderDialect": "input_tip_realName",
+                    "fieldName": "realName"
+                  },
+                  {
+                    "labelDialect": "input_field_accountNo",
+                    "placeholderDialect": "input_tip_accountNo",
+                    "fieldName": "accountNo"
+                  },
+                  {
+                    "labelDialect": "input_field_branchName",
+                    "placeholderDialect": "input_tip_branchName",
+                    "fieldName": "branchName"
+                  },
+                  {
+                    "labelDialect": "input_field_bankName",
+                    "placeholderDialect": "input_tip_bankName",
+                    "fieldName": "bankName"
+                  }
+                ]
+              },
+              "realNameVerified": true
+            },
+            {
+              "id": "2434416",
+              "realName": "OLEKSII PISHCHUHIN",
+              "paymentType": 61,
+              "bankName": "",
+              "branchName": ",",
+              "accountNo": ",",
+              "qrcode": "",
+              "visible": 1,
+              "payMessage": "",
+              "firstName": "",
+              "lastName": "",
+              "secondLastName": "",
+              "clabe": "",
+              "debitCardNumber": "",
+              "mobile": "",
+              "businessName": "",
+              "concept": "",
+              "paymentExt1": "",
+              "paymentExt2": "",
+              "paymentExt3": "",
+              "paymentExt4": "",
+              "paymentExt5": "",
+              "paymentExt6": "",
+              "paymentTemplateVersion": 1,
+              "paymentConfig": {
+                "paymentType": 61,
+                "paymentName": "PUMB",
+                "paymentDialect": "payment_field_61",
+                "paymentTemplateItem": [
+                  {
+                    "labelDialect": "input_field_realName",
+                    "placeholderDialect": "input_tip_realName",
+                    "fieldName": "realName"
+                  },
+                  {
+                    "labelDialect": "input_field_accountNo",
+                    "placeholderDialect": "input_tip_accountNo",
+                    "fieldName": "accountNo"
+                  },
+                  {
+                    "labelDialect": "input_field_branchName",
+                    "placeholderDialect": "input_tip_branchName",
+                    "fieldName": "branchName"
+                  },
+                  {
+                    "labelDialect": "input_field_bankName",
+                    "placeholderDialect": "input_tip_bankName",
+                    "fieldName": "bankName"
+                  }
+                ]
+              },
+              "realNameVerified": true
+            }
+          ],
+          "version": 2,
+          "updateDate": "1723747270000",
+          "feeRate": "0",
+          "paymentPeriod": 30,
+          "itemType": "ORIGIN",
+          "verificationOrderSwitch": false,
+          "verificationOrderLabels": [],
+          "verificationOrderAmount": "",
+          "subsidyAd": false
+        },
+        {
+          "id": "1796902834799566848",
+          "accountId": "24305226",
+          "userId": "24305224",
+          "nickName": "",
+          "tokenId": "USDT",
+          "tokenName": "USDT",
+          "currencyId": "UAH",
+          "side": 0,
+          "priceType": 0,
+          "price": "42.66",
+          "premium": "0",
+          "lastQuantity": "0",
+          "quantity": "264",
+          "frozenQuantity": "0",
+          "executedQuantity": "264",
+          "minAmount": "2000.00",
+          "maxAmount": "1800000.00",
+          "remark": "будь куди без комісій будь кому швидко ",
+          "status": 20,
+          "createDate": "1717249996000",
+          "payments": [
+            "14",
+            "43",
+            "61"
+          ],
+          "orderNum": 28,
+          "finishNum": 28,
+          "recentOrderNum": 0,
+          "recentExecuteRate": 0,
+          "fee": "",
+          "isOnline": false,
+          "lastLogoutTime": "0",
+          "symbolInfo": {
+            "id": "8",
+            "exchangeId": "301",
+            "orgId": "9001",
+            "tokenId": "USDT",
+            "currencyId": "UAH",
+            "status": 1,
+            "lowerLimitAlarm": 95,
+            "upperLimitAlarm": 115,
+            "itemDownRange": "85",
+            "itemUpRange": "120",
+            "currencyMinQuote": "100",
+            "currencyMaxQuote": "1800000",
+            "currencyLowerMaxQuote": "100",
+            "tokenMinQuote": "1",
+            "tokenMaxQuote": "50000",
+            "kycCurrencyLimit": "0",
+            "itemSideLimit": 3,
+            "buyFeeRate": "",
+            "sellFeeRate": "",
+            "orderAutoCancelMinute": 15,
+            "orderFinishMinute": 10,
+            "tradeSide": 9,
+            "currency": {
+              "id": "8",
+              "exchangeId": "0",
+              "orgId": "9001",
+              "currencyId": "UAH",
+              "scale": 2
+            },
+            "token": {
+              "id": "1",
+              "exchangeId": "0",
+              "orgId": "9001",
+              "tokenId": "USDT",
+              "scale": 4,
+              "sequence": 1
+            },
+            "buyAd": {
+              "paymentPeriods": [
+                15,
+                30
+              ]
+            },
+            "sellAd": {
+              "paymentPeriods": [
+                15,
+                30
+              ]
+            }
+          },
+          "tradingPreferenceSet": {
+            "hasUnPostAd": 0,
+            "isKyc": 1,
+            "isEmail": 0,
+            "isMobile": 0,
+            "hasRegisterTime": 0,
+            "registerTimeThreshold": 0,
+            "orderFinishNumberDay30": 0,
+            "completeRateDay30": "0",
+            "nationalLimit": "",
+            "hasOrderFinishNumberDay30": 0,
+            "hasCompleteRateDay30": 0,
+            "hasNationalLimit": 0
+          },
+          "paymentTerms": [
+            {
+              "id": "1545287",
+              "realName": "OLEKSII PISHCHUHIN",
+              "paymentType": 14,
+              "bankName": ",",
+              "branchName": ",",
+              "accountNo": ",",
+              "qrcode": "",
+              "visible": 1,
+              "payMessage": "",
+              "firstName": "",
+              "lastName": "",
+              "secondLastName": "",
+              "clabe": "",
+              "debitCardNumber": "",
+              "mobile": "",
+              "businessName": "",
+              "concept": "",
+              "paymentExt1": "",
+              "paymentExt2": "",
+              "paymentExt3": "",
+              "paymentExt4": "",
+              "paymentExt5": "",
+              "paymentExt6": "",
+              "paymentTemplateVersion": 1,
+              "paymentConfig": {
+                "paymentType": 14,
+                "paymentName": "Bank Transfer",
+                "paymentDialect": "payment_field_14",
+                "paymentTemplateItem": [
+                  {
+                    "labelDialect": "input_field_realName",
+                    "placeholderDialect": "input_tip_realName",
+                    "fieldName": "realName"
+                  },
+                  {
+                    "labelDialect": "input_field_accountNo",
+                    "placeholderDialect": "input_tip_accountNo",
+                    "fieldName": "accountNo"
+                  },
+                  {
+                    "labelDialect": "input_field_branchName",
+                    "placeholderDialect": "input_tip_branchName",
+                    "fieldName": "branchName"
+                  },
+                  {
+                    "labelDialect": "input_field_bankName",
+                    "placeholderDialect": "input_tip_bankName",
+                    "fieldName": "bankName"
+                  }
+                ]
+              },
+              "realNameVerified": true
+            },
+            {
+              "id": "1984674",
+              "realName": "OLEKSII PISHCHUHIN",
+              "paymentType": 43,
+              "bankName": "",
+              "branchName": ",",
+              "accountNo": ",",
+              "qrcode": "",
+              "visible": 1,
+              "payMessage": "",
+              "firstName": "",
+              "lastName": "",
+              "secondLastName": "",
+              "clabe": "",
+              "debitCardNumber": "",
+              "mobile": "",
+              "businessName": "",
+              "concept": "",
+              "paymentExt1": "",
+              "paymentExt2": "",
+              "paymentExt3": "",
+              "paymentExt4": "",
+              "paymentExt5": "",
+              "paymentExt6": "",
+              "paymentTemplateVersion": 1,
+              "paymentConfig": {
+                "paymentType": 43,
+                "paymentName": "Monobank",
+                "paymentDialect": "payment_field_43",
+                "paymentTemplateItem": [
+                  {
+                    "labelDialect": "input_field_realName",
+                    "placeholderDialect": "input_tip_realName",
+                    "fieldName": "realName"
+                  },
+                  {
+                    "labelDialect": "input_field_accountNo",
+                    "placeholderDialect": "input_tip_accountNo",
+                    "fieldName": "accountNo"
+                  },
+                  {
+                    "labelDialect": "input_field_branchName",
+                    "placeholderDialect": "input_tip_branchName",
+                    "fieldName": "branchName"
+                  },
+                  {
+                    "labelDialect": "input_field_bankName",
+                    "placeholderDialect": "input_tip_bankName",
+                    "fieldName": "bankName"
+                  }
+                ]
+              },
+              "realNameVerified": true
+            },
+            {
+              "id": "2434416",
+              "realName": "OLEKSII PISHCHUHIN",
+              "paymentType": 61,
+              "bankName": "",
+              "branchName": ",",
+              "accountNo": ",",
+              "qrcode": "",
+              "visible": 1,
+              "payMessage": "",
+              "firstName": "",
+              "lastName": "",
+              "secondLastName": "",
+              "clabe": "",
+              "debitCardNumber": "",
+              "mobile": "",
+              "businessName": "",
+              "concept": "",
+              "paymentExt1": "",
+              "paymentExt2": "",
+              "paymentExt3": "",
+              "paymentExt4": "",
+              "paymentExt5": "",
+              "paymentExt6": "",
+              "paymentTemplateVersion": 1,
+              "paymentConfig": {
+                "paymentType": 61,
+                "paymentName": "PUMB",
+                "paymentDialect": "payment_field_61",
+                "paymentTemplateItem": [
+                  {
+                    "labelDialect": "input_field_realName",
+                    "placeholderDialect": "input_tip_realName",
+                    "fieldName": "realName"
+                  },
+                  {
+                    "labelDialect": "input_field_accountNo",
+                    "placeholderDialect": "input_tip_accountNo",
+                    "fieldName": "accountNo"
+                  },
+                  {
+                    "labelDialect": "input_field_branchName",
+                    "placeholderDialect": "input_tip_branchName",
+                    "fieldName": "branchName"
+                  },
+                  {
+                    "labelDialect": "input_field_bankName",
+                    "placeholderDialect": "input_tip_bankName",
+                    "fieldName": "bankName"
+                  }
+                ]
+              },
+              "realNameVerified": true
+            }
+          ],
+          "version": 2,
+          "updateDate": "1723723592000",
+          "feeRate": "0",
+          "paymentPeriod": 30,
+          "itemType": "ORIGIN",
+          "verificationOrderSwitch": false,
+          "verificationOrderLabels": [],
+          "verificationOrderAmount": "",
+          "subsidyAd": false
+        },
+        {
+          "id": "1805332726352773120",
+          "accountId": "24305226",
+          "userId": "24305224",
+          "nickName": "",
+          "tokenId": "USDT",
+          "tokenName": "USDT",
+          "currencyId": "UAH",
+          "side": 0,
+          "priceType": 0,
+          "price": "42.26",
+          "premium": "0",
+          "lastQuantity": "3.2954",
+          "quantity": "165.64",
+          "frozenQuantity": "0",
+          "executedQuantity": "162.3446",
+          "minAmount": "2000.00",
+          "maxAmount": "180000.00",
+          "remark": "будь куди без комісій будь кому швидко, сьогодні прізвище моє ",
+          "status": 20,
+          "createDate": "1719259838000",
+          "payments": [
+            "14",
+            "43"
+          ],
+          "orderNum": 23,
+          "finishNum": 23,
+          "recentOrderNum": 0,
+          "recentExecuteRate": 0,
+          "fee": "",
+          "isOnline": false,
+          "lastLogoutTime": "0",
+          "symbolInfo": {
+            "id": "8",
+            "exchangeId": "301",
+            "orgId": "9001",
+            "tokenId": "USDT",
+            "currencyId": "UAH",
+            "status": 1,
+            "lowerLimitAlarm": 95,
+            "upperLimitAlarm": 115,
+            "itemDownRange": "85",
+            "itemUpRange": "120",
+            "currencyMinQuote": "100",
+            "currencyMaxQuote": "1800000",
+            "currencyLowerMaxQuote": "100",
+            "tokenMinQuote": "1",
+            "tokenMaxQuote": "50000",
+            "kycCurrencyLimit": "0",
+            "itemSideLimit": 3,
+            "buyFeeRate": "",
+            "sellFeeRate": "",
+            "orderAutoCancelMinute": 15,
+            "orderFinishMinute": 10,
+            "tradeSide": 9,
+            "currency": {
+              "id": "8",
+              "exchangeId": "0",
+              "orgId": "9001",
+              "currencyId": "UAH",
+              "scale": 2
+            },
+            "token": {
+              "id": "1",
+              "exchangeId": "0",
+              "orgId": "9001",
+              "tokenId": "USDT",
+              "scale": 4,
+              "sequence": 1
+            },
+            "buyAd": {
+              "paymentPeriods": [
+                15,
+                30
+              ]
+            },
+            "sellAd": {
+              "paymentPeriods": [
+                15,
+                30
+              ]
+            }
+          },
+          "tradingPreferenceSet": {
+            "hasUnPostAd": 0,
+            "isKyc": 1,
+            "isEmail": 0,
+            "isMobile": 0,
+            "hasRegisterTime": 0,
+            "registerTimeThreshold": 0,
+            "orderFinishNumberDay30": 0,
+            "completeRateDay30": "",
+            "nationalLimit": "",
+            "hasOrderFinishNumberDay30": 0,
+            "hasCompleteRateDay30": 0,
+            "hasNationalLimit": 0
+          },
+          "paymentTerms": [
+            {
+              "id": "7595485",
+              "realName": "OLEKSII PISHCHUHIN",
+              "paymentType": 14,
+              "bankName": "чат ",
+              "branchName": "чат",
+              "accountNo": "0000 0000 0000 0000",
+              "qrcode": "",
+              "visible": 0,
+              "payMessage": "",
+              "firstName": "",
+              "lastName": "",
+              "secondLastName": "",
+              "clabe": "",
+              "debitCardNumber": "",
+              "mobile": "",
+              "businessName": "",
+              "concept": "",
+              "paymentExt1": "",
+              "paymentExt2": "",
+              "paymentExt3": "",
+              "paymentExt4": "",
+              "paymentExt5": "",
+              "paymentExt6": "",
+              "paymentTemplateVersion": 1,
+              "paymentConfig": {
+                "paymentType": 14,
+                "paymentName": "Bank Transfer",
+                "paymentDialect": "payment_field_14",
+                "paymentTemplateItem": [
+                  {
+                    "labelDialect": "input_field_realName",
+                    "placeholderDialect": "input_tip_realName",
+                    "fieldName": "realName"
+                  },
+                  {
+                    "labelDialect": "input_field_accountNo",
+                    "placeholderDialect": "input_tip_accountNo",
+                    "fieldName": "accountNo"
+                  },
+                  {
+                    "labelDialect": "input_field_branchName",
+                    "placeholderDialect": "input_tip_branchName",
+                    "fieldName": "branchName"
+                  },
+                  {
+                    "labelDialect": "input_field_bankName",
+                    "placeholderDialect": "input_tip_bankName",
+                    "fieldName": "bankName"
+                  }
+                ]
+              },
+              "realNameVerified": true
+            },
+            {
+              "id": "7595504",
+              "realName": "OLEKSII PISHCHUHIN",
+              "paymentType": 43,
+              "bankName": "",
+              "branchName": "чат",
+              "accountNo": "0000 0100 0001 0001",
+              "qrcode": "",
+              "visible": 0,
+              "payMessage": "",
+              "firstName": "",
+              "lastName": "",
+              "secondLastName": "",
+              "clabe": "",
+              "debitCardNumber": "",
+              "mobile": "",
+              "businessName": "",
+              "concept": "",
+              "paymentExt1": "",
+              "paymentExt2": "",
+              "paymentExt3": "",
+              "paymentExt4": "",
+              "paymentExt5": "",
+              "paymentExt6": "",
+              "paymentTemplateVersion": 1,
+              "paymentConfig": {
+                "paymentType": 43,
+                "paymentName": "Monobank",
+                "paymentDialect": "payment_field_43",
+                "paymentTemplateItem": [
+                  {
+                    "labelDialect": "input_field_realName",
+                    "placeholderDialect": "input_tip_realName",
+                    "fieldName": "realName"
+                  },
+                  {
+                    "labelDialect": "input_field_accountNo",
+                    "placeholderDialect": "input_tip_accountNo",
+                    "fieldName": "accountNo"
+                  },
+                  {
+                    "labelDialect": "input_field_branchName",
+                    "placeholderDialect": "input_tip_branchName",
+                    "fieldName": "branchName"
+                  },
+                  {
+                    "labelDialect": "input_field_bankName",
+                    "placeholderDialect": "input_tip_bankName",
+                    "fieldName": "bankName"
+                  }
+                ]
+              },
+              "realNameVerified": true
+            }
+          ],
+          "version": 2,
+          "updateDate": "1722367972000",
+          "feeRate": "0",
+          "paymentPeriod": 30,
+          "itemType": "ORIGIN",
+          "verificationOrderSwitch": false,
+          "verificationOrderLabels": [],
+          "verificationOrderAmount": "",
+          "subsidyAd": false
+        },
+        {
+          "id": "1803513035414720512",
+          "accountId": "24305226",
+          "userId": "24305224",
+          "nickName": "",
+          "tokenId": "USDT",
+          "tokenName": "USDT",
+          "currencyId": "UAH",
+          "side": 0,
+          "priceType": 0,
+          "price": "42.34",
+          "premium": "0",
+          "lastQuantity": "0",
+          "quantity": "1760",
+          "frozenQuantity": "0",
+          "executedQuantity": "1760",
+          "minAmount": "5000.00",
+          "maxAmount": "180000.00",
+          "remark": "швидко з пумба будь куди без комісій ",
+          "status": 20,
+          "createDate": "1718825990000",
+          "payments": [
+            "14",
+            "43",
+            "61"
+          ],
+          "orderNum": 10,
+          "finishNum": 10,
+          "recentOrderNum": 0,
+          "recentExecuteRate": 0,
+          "fee": "",
+          "isOnline": false,
+          "lastLogoutTime": "0",
+          "symbolInfo": {
+            "id": "8",
+            "exchangeId": "301",
+            "orgId": "9001",
+            "tokenId": "USDT",
+            "currencyId": "UAH",
+            "status": 1,
+            "lowerLimitAlarm": 95,
+            "upperLimitAlarm": 115,
+            "itemDownRange": "85",
+            "itemUpRange": "120",
+            "currencyMinQuote": "100",
+            "currencyMaxQuote": "1800000",
+            "currencyLowerMaxQuote": "100",
+            "tokenMinQuote": "1",
+            "tokenMaxQuote": "50000",
+            "kycCurrencyLimit": "0",
+            "itemSideLimit": 3,
+            "buyFeeRate": "",
+            "sellFeeRate": "",
+            "orderAutoCancelMinute": 15,
+            "orderFinishMinute": 10,
+            "tradeSide": 9,
+            "currency": {
+              "id": "8",
+              "exchangeId": "0",
+              "orgId": "9001",
+              "currencyId": "UAH",
+              "scale": 2
+            },
+            "token": {
+              "id": "1",
+              "exchangeId": "0",
+              "orgId": "9001",
+              "tokenId": "USDT",
+              "scale": 4,
+              "sequence": 1
+            },
+            "buyAd": {
+              "paymentPeriods": [
+                15,
+                30
+              ]
+            },
+            "sellAd": {
+              "paymentPeriods": [
+                15,
+                30
+              ]
+            }
+          },
+          "tradingPreferenceSet": {
+            "hasUnPostAd": 0,
+            "isKyc": 1,
+            "isEmail": 0,
+            "isMobile": 0,
+            "hasRegisterTime": 0,
+            "registerTimeThreshold": 0,
+            "orderFinishNumberDay30": 0,
+            "completeRateDay30": "",
+            "nationalLimit": "",
+            "hasOrderFinishNumberDay30": 0,
+            "hasCompleteRateDay30": 0,
+            "hasNationalLimit": 0
+          },
+          "paymentTerms": [
+            {
+              "id": "1545287",
+              "realName": "OLEKSII PISHCHUHIN",
+              "paymentType": 14,
+              "bankName": ",",
+              "branchName": ",",
+              "accountNo": ",",
+              "qrcode": "",
+              "visible": 1,
+              "payMessage": "",
+              "firstName": "",
+              "lastName": "",
+              "secondLastName": "",
+              "clabe": "",
+              "debitCardNumber": "",
+              "mobile": "",
+              "businessName": "",
+              "concept": "",
+              "paymentExt1": "",
+              "paymentExt2": "",
+              "paymentExt3": "",
+              "paymentExt4": "",
+              "paymentExt5": "",
+              "paymentExt6": "",
+              "paymentTemplateVersion": 1,
+              "paymentConfig": {
+                "paymentType": 14,
+                "paymentName": "Bank Transfer",
+                "paymentDialect": "payment_field_14",
+                "paymentTemplateItem": [
+                  {
+                    "labelDialect": "input_field_realName",
+                    "placeholderDialect": "input_tip_realName",
+                    "fieldName": "realName"
+                  },
+                  {
+                    "labelDialect": "input_field_accountNo",
+                    "placeholderDialect": "input_tip_accountNo",
+                    "fieldName": "accountNo"
+                  },
+                  {
+                    "labelDialect": "input_field_branchName",
+                    "placeholderDialect": "input_tip_branchName",
+                    "fieldName": "branchName"
+                  },
+                  {
+                    "labelDialect": "input_field_bankName",
+                    "placeholderDialect": "input_tip_bankName",
+                    "fieldName": "bankName"
+                  }
+                ]
+              },
+              "realNameVerified": true
+            },
+            {
+              "id": "1984674",
+              "realName": "OLEKSII PISHCHUHIN",
+              "paymentType": 43,
+              "bankName": "",
+              "branchName": ",",
+              "accountNo": ",",
+              "qrcode": "",
+              "visible": 1,
+              "payMessage": "",
+              "firstName": "",
+              "lastName": "",
+              "secondLastName": "",
+              "clabe": "",
+              "debitCardNumber": "",
+              "mobile": "",
+              "businessName": "",
+              "concept": "",
+              "paymentExt1": "",
+              "paymentExt2": "",
+              "paymentExt3": "",
+              "paymentExt4": "",
+              "paymentExt5": "",
+              "paymentExt6": "",
+              "paymentTemplateVersion": 1,
+              "paymentConfig": {
+                "paymentType": 43,
+                "paymentName": "Monobank",
+                "paymentDialect": "payment_field_43",
+                "paymentTemplateItem": [
+                  {
+                    "labelDialect": "input_field_realName",
+                    "placeholderDialect": "input_tip_realName",
+                    "fieldName": "realName"
+                  },
+                  {
+                    "labelDialect": "input_field_accountNo",
+                    "placeholderDialect": "input_tip_accountNo",
+                    "fieldName": "accountNo"
+                  },
+                  {
+                    "labelDialect": "input_field_branchName",
+                    "placeholderDialect": "input_tip_branchName",
+                    "fieldName": "branchName"
+                  },
+                  {
+                    "labelDialect": "input_field_bankName",
+                    "placeholderDialect": "input_tip_bankName",
+                    "fieldName": "bankName"
+                  }
+                ]
+              },
+              "realNameVerified": true
+            },
+            {
+              "id": "2434416",
+              "realName": "OLEKSII PISHCHUHIN",
+              "paymentType": 61,
+              "bankName": "",
+              "branchName": ",",
+              "accountNo": ",",
+              "qrcode": "",
+              "visible": 1,
+              "payMessage": "",
+              "firstName": "",
+              "lastName": "",
+              "secondLastName": "",
+              "clabe": "",
+              "debitCardNumber": "",
+              "mobile": "",
+              "businessName": "",
+              "concept": "",
+              "paymentExt1": "",
+              "paymentExt2": "",
+              "paymentExt3": "",
+              "paymentExt4": "",
+              "paymentExt5": "",
+              "paymentExt6": "",
+              "paymentTemplateVersion": 1,
+              "paymentConfig": {
+                "paymentType": 61,
+                "paymentName": "PUMB",
+                "paymentDialect": "payment_field_61",
+                "paymentTemplateItem": [
+                  {
+                    "labelDialect": "input_field_realName",
+                    "placeholderDialect": "input_tip_realName",
+                    "fieldName": "realName"
+                  },
+                  {
+                    "labelDialect": "input_field_accountNo",
+                    "placeholderDialect": "input_tip_accountNo",
+                    "fieldName": "accountNo"
+                  },
+                  {
+                    "labelDialect": "input_field_branchName",
+                    "placeholderDialect": "input_tip_branchName",
+                    "fieldName": "branchName"
+                  },
+                  {
+                    "labelDialect": "input_field_bankName",
+                    "placeholderDialect": "input_tip_bankName",
+                    "fieldName": "bankName"
+                  }
+                ]
+              },
+              "realNameVerified": true
+            }
+          ],
+          "version": 2,
+          "updateDate": "1718992769000",
+          "feeRate": "0",
+          "paymentPeriod": 30,
+          "itemType": "ORIGIN",
+          "verificationOrderSwitch": false,
+          "verificationOrderLabels": [],
+          "verificationOrderAmount": "",
+          "subsidyAd": false
+        },
+        {
+          "id": "1799442070506614784",
+          "accountId": "24305226",
+          "userId": "24305224",
+          "nickName": "",
+          "tokenId": "USDT",
+          "tokenName": "USDT",
+          "currencyId": "UAH",
+          "side": 0,
+          "priceType": 0,
+          "price": "42.36",
+          "premium": "0",
+          "lastQuantity": "187",
+          "quantity": "1487",
+          "frozenQuantity": "0",
+          "executedQuantity": "1300",
+          "minAmount": "5000.00",
+          "maxAmount": "1800000.00",
+          "remark": "сьогодні швидко з пумба ",
+          "status": 20,
+          "createDate": "1717855396000",
+          "payments": [
+            "14",
+            "43",
+            "61"
+          ],
+          "orderNum": 16,
+          "finishNum": 16,
+          "recentOrderNum": 0,
+          "recentExecuteRate": 0,
+          "fee": "",
+          "isOnline": false,
+          "lastLogoutTime": "0",
+          "symbolInfo": {
+            "id": "8",
+            "exchangeId": "301",
+            "orgId": "9001",
+            "tokenId": "USDT",
+            "currencyId": "UAH",
+            "status": 1,
+            "lowerLimitAlarm": 95,
+            "upperLimitAlarm": 115,
+            "itemDownRange": "85",
+            "itemUpRange": "120",
+            "currencyMinQuote": "100",
+            "currencyMaxQuote": "1800000",
+            "currencyLowerMaxQuote": "100",
+            "tokenMinQuote": "1",
+            "tokenMaxQuote": "50000",
+            "kycCurrencyLimit": "0",
+            "itemSideLimit": 3,
+            "buyFeeRate": "",
+            "sellFeeRate": "",
+            "orderAutoCancelMinute": 15,
+            "orderFinishMinute": 10,
+            "tradeSide": 9,
+            "currency": {
+              "id": "8",
+              "exchangeId": "0",
+              "orgId": "9001",
+              "currencyId": "UAH",
+              "scale": 2
+            },
+            "token": {
+              "id": "1",
+              "exchangeId": "0",
+              "orgId": "9001",
+              "tokenId": "USDT",
+              "scale": 4,
+              "sequence": 1
+            },
+            "buyAd": {
+              "paymentPeriods": [
+                15,
+                30
+              ]
+            },
+            "sellAd": {
+              "paymentPeriods": [
+                15,
+                30
+              ]
+            }
+          },
+          "tradingPreferenceSet": {
+            "hasUnPostAd": 0,
+            "isKyc": 1,
+            "isEmail": 0,
+            "isMobile": 0,
+            "hasRegisterTime": 0,
+            "registerTimeThreshold": 0,
+            "orderFinishNumberDay30": 0,
+            "completeRateDay30": "",
+            "nationalLimit": "",
+            "hasOrderFinishNumberDay30": 0,
+            "hasCompleteRateDay30": 0,
+            "hasNationalLimit": 0
+          },
+          "paymentTerms": [
+            {
+              "id": "1545287",
+              "realName": "OLEKSII PISHCHUHIN",
+              "paymentType": 14,
+              "bankName": ",",
+              "branchName": ",",
+              "accountNo": ",",
+              "qrcode": "",
+              "visible": 1,
+              "payMessage": "",
+              "firstName": "",
+              "lastName": "",
+              "secondLastName": "",
+              "clabe": "",
+              "debitCardNumber": "",
+              "mobile": "",
+              "businessName": "",
+              "concept": "",
+              "paymentExt1": "",
+              "paymentExt2": "",
+              "paymentExt3": "",
+              "paymentExt4": "",
+              "paymentExt5": "",
+              "paymentExt6": "",
+              "paymentTemplateVersion": 1,
+              "paymentConfig": {
+                "paymentType": 14,
+                "paymentName": "Bank Transfer",
+                "paymentDialect": "payment_field_14",
+                "paymentTemplateItem": [
+                  {
+                    "labelDialect": "input_field_realName",
+                    "placeholderDialect": "input_tip_realName",
+                    "fieldName": "realName"
+                  },
+                  {
+                    "labelDialect": "input_field_accountNo",
+                    "placeholderDialect": "input_tip_accountNo",
+                    "fieldName": "accountNo"
+                  },
+                  {
+                    "labelDialect": "input_field_branchName",
+                    "placeholderDialect": "input_tip_branchName",
+                    "fieldName": "branchName"
+                  },
+                  {
+                    "labelDialect": "input_field_bankName",
+                    "placeholderDialect": "input_tip_bankName",
+                    "fieldName": "bankName"
+                  }
+                ]
+              },
+              "realNameVerified": true
+            },
+            {
+              "id": "1984674",
+              "realName": "OLEKSII PISHCHUHIN",
+              "paymentType": 43,
+              "bankName": "",
+              "branchName": ",",
+              "accountNo": ",",
+              "qrcode": "",
+              "visible": 1,
+              "payMessage": "",
+              "firstName": "",
+              "lastName": "",
+              "secondLastName": "",
+              "clabe": "",
+              "debitCardNumber": "",
+              "mobile": "",
+              "businessName": "",
+              "concept": "",
+              "paymentExt1": "",
+              "paymentExt2": "",
+              "paymentExt3": "",
+              "paymentExt4": "",
+              "paymentExt5": "",
+              "paymentExt6": "",
+              "paymentTemplateVersion": 1,
+              "paymentConfig": {
+                "paymentType": 43,
+                "paymentName": "Monobank",
+                "paymentDialect": "payment_field_43",
+                "paymentTemplateItem": [
+                  {
+                    "labelDialect": "input_field_realName",
+                    "placeholderDialect": "input_tip_realName",
+                    "fieldName": "realName"
+                  },
+                  {
+                    "labelDialect": "input_field_accountNo",
+                    "placeholderDialect": "input_tip_accountNo",
+                    "fieldName": "accountNo"
+                  },
+                  {
+                    "labelDialect": "input_field_branchName",
+                    "placeholderDialect": "input_tip_branchName",
+                    "fieldName": "branchName"
+                  },
+                  {
+                    "labelDialect": "input_field_bankName",
+                    "placeholderDialect": "input_tip_bankName",
+                    "fieldName": "bankName"
+                  }
+                ]
+              },
+              "realNameVerified": true
+            },
+            {
+              "id": "2434416",
+              "realName": "OLEKSII PISHCHUHIN",
+              "paymentType": 61,
+              "bankName": "",
+              "branchName": ",",
+              "accountNo": ",",
+              "qrcode": "",
+              "visible": 1,
+              "payMessage": "",
+              "firstName": "",
+              "lastName": "",
+              "secondLastName": "",
+              "clabe": "",
+              "debitCardNumber": "",
+              "mobile": "",
+              "businessName": "",
+              "concept": "",
+              "paymentExt1": "",
+              "paymentExt2": "",
+              "paymentExt3": "",
+              "paymentExt4": "",
+              "paymentExt5": "",
+              "paymentExt6": "",
+              "paymentTemplateVersion": 1,
+              "paymentConfig": {
+                "paymentType": 61,
+                "paymentName": "PUMB",
+                "paymentDialect": "payment_field_61",
+                "paymentTemplateItem": [
+                  {
+                    "labelDialect": "input_field_realName",
+                    "placeholderDialect": "input_tip_realName",
+                    "fieldName": "realName"
+                  },
+                  {
+                    "labelDialect": "input_field_accountNo",
+                    "placeholderDialect": "input_tip_accountNo",
+                    "fieldName": "accountNo"
+                  },
+                  {
+                    "labelDialect": "input_field_branchName",
+                    "placeholderDialect": "input_tip_branchName",
+                    "fieldName": "branchName"
+                  },
+                  {
+                    "labelDialect": "input_field_bankName",
+                    "placeholderDialect": "input_tip_bankName",
+                    "fieldName": "bankName"
+                  }
+                ]
+              },
+              "realNameVerified": true
+            }
+          ],
+          "version": 2,
+          "updateDate": "1718650955000",
+          "feeRate": "0",
+          "paymentPeriod": 30,
+          "itemType": "ORIGIN",
+          "verificationOrderSwitch": false,
+          "verificationOrderLabels": [],
+          "verificationOrderAmount": "",
+          "subsidyAd": false
+        },
+        {
+          "id": "1795162324611682304",
+          "accountId": "24305226",
+          "userId": "24305224",
+          "nickName": "",
+          "tokenId": "USDT",
+          "tokenName": "USDT",
+          "currencyId": "UAH",
+          "side": 0,
+          "priceType": 0,
+          "price": "40.66",
+          "premium": "0",
+          "lastQuantity": "651.3",
+          "quantity": "2963.5289",
+          "frozenQuantity": "0",
+          "executedQuantity": "2312.2289",
+          "minAmount": "30000.00",
+          "maxAmount": "180000.00",
+          "remark": "Доброго дня \nЗі звичайної фіз особи, не бізнес \nБез комісій \n\nПовне ПІБ отримувача \nНазва банку \nОбов'язково в чат 🆘\n\nМожу розбить переказ на 2-3 різні частини \n\nВідправляю будь кому 🧘‍♂\nНа будь який банк 🏦\nМоже бути від моїх довірених осіб 🧡\n\n(Якщо ваш приват універсальна то без комісій, \n \"картки для виплат\" жруть до 50 грн - цю комісію я не плачу) \nІнші банки зазвичай не беруть вхідних комісій \n\nСтараюсь швидко\nАле орієнтовний максимальний час ордеру до 30 хвилин \n\nТелеграм🛜 prodamsaraj 🛜\nЯ не зв'язуюсь із клієнтами сам і ніколи НЕ пропоную співпрацю",
+          "status": 20,
+          "createDate": "1716835026000",
+          "payments": [
+            "14",
+            "43",
+            "61"
+          ],
+          "orderNum": 5,
+          "finishNum": 5,
+          "recentOrderNum": 0,
+          "recentExecuteRate": 0,
+          "fee": "",
+          "isOnline": false,
+          "lastLogoutTime": "0",
+          "symbolInfo": {
+            "id": "8",
+            "exchangeId": "301",
+            "orgId": "9001",
+            "tokenId": "USDT",
+            "currencyId": "UAH",
+            "status": 1,
+            "lowerLimitAlarm": 95,
+            "upperLimitAlarm": 115,
+            "itemDownRange": "85",
+            "itemUpRange": "120",
+            "currencyMinQuote": "100",
+            "currencyMaxQuote": "1800000",
+            "currencyLowerMaxQuote": "100",
+            "tokenMinQuote": "1",
+            "tokenMaxQuote": "50000",
+            "kycCurrencyLimit": "0",
+            "itemSideLimit": 3,
+            "buyFeeRate": "",
+            "sellFeeRate": "",
+            "orderAutoCancelMinute": 15,
+            "orderFinishMinute": 10,
+            "tradeSide": 9,
+            "currency": {
+              "id": "8",
+              "exchangeId": "0",
+              "orgId": "9001",
+              "currencyId": "UAH",
+              "scale": 2
+            },
+            "token": {
+              "id": "1",
+              "exchangeId": "0",
+              "orgId": "9001",
+              "tokenId": "USDT",
+              "scale": 4,
+              "sequence": 1
+            },
+            "buyAd": {
+              "paymentPeriods": [
+                15,
+                30
+              ]
+            },
+            "sellAd": {
+              "paymentPeriods": [
+                15,
+                30
+              ]
+            }
+          },
+          "tradingPreferenceSet": {
+            "hasUnPostAd": 0,
+            "isKyc": 1,
+            "isEmail": 0,
+            "isMobile": 0,
+            "hasRegisterTime": 0,
+            "registerTimeThreshold": 0,
+            "orderFinishNumberDay30": 0,
+            "completeRateDay30": "",
+            "nationalLimit": "",
+            "hasOrderFinishNumberDay30": 0,
+            "hasCompleteRateDay30": 0,
+            "hasNationalLimit": 0
+          },
+          "paymentTerms": [
+            {
+              "id": "1545287",
+              "realName": "OLEKSII PISHCHUHIN",
+              "paymentType": 14,
+              "bankName": ",",
+              "branchName": ",",
+              "accountNo": ",",
+              "qrcode": "",
+              "visible": 1,
+              "payMessage": "",
+              "firstName": "",
+              "lastName": "",
+              "secondLastName": "",
+              "clabe": "",
+              "debitCardNumber": "",
+              "mobile": "",
+              "businessName": "",
+              "concept": "",
+              "paymentExt1": "",
+              "paymentExt2": "",
+              "paymentExt3": "",
+              "paymentExt4": "",
+              "paymentExt5": "",
+              "paymentExt6": "",
+              "paymentTemplateVersion": 1,
+              "paymentConfig": {
+                "paymentType": 14,
+                "paymentName": "Bank Transfer",
+                "paymentDialect": "payment_field_14",
+                "paymentTemplateItem": [
+                  {
+                    "labelDialect": "input_field_realName",
+                    "placeholderDialect": "input_tip_realName",
+                    "fieldName": "realName"
+                  },
+                  {
+                    "labelDialect": "input_field_accountNo",
+                    "placeholderDialect": "input_tip_accountNo",
+                    "fieldName": "accountNo"
+                  },
+                  {
+                    "labelDialect": "input_field_branchName",
+                    "placeholderDialect": "input_tip_branchName",
+                    "fieldName": "branchName"
+                  },
+                  {
+                    "labelDialect": "input_field_bankName",
+                    "placeholderDialect": "input_tip_bankName",
+                    "fieldName": "bankName"
+                  }
+                ]
+              },
+              "realNameVerified": true
+            },
+            {
+              "id": "1984674",
+              "realName": "OLEKSII PISHCHUHIN",
+              "paymentType": 43,
+              "bankName": "",
+              "branchName": ",",
+              "accountNo": ",",
+              "qrcode": "",
+              "visible": 1,
+              "payMessage": "",
+              "firstName": "",
+              "lastName": "",
+              "secondLastName": "",
+              "clabe": "",
+              "debitCardNumber": "",
+              "mobile": "",
+              "businessName": "",
+              "concept": "",
+              "paymentExt1": "",
+              "paymentExt2": "",
+              "paymentExt3": "",
+              "paymentExt4": "",
+              "paymentExt5": "",
+              "paymentExt6": "",
+              "paymentTemplateVersion": 1,
+              "paymentConfig": {
+                "paymentType": 43,
+                "paymentName": "Monobank",
+                "paymentDialect": "payment_field_43",
+                "paymentTemplateItem": [
+                  {
+                    "labelDialect": "input_field_realName",
+                    "placeholderDialect": "input_tip_realName",
+                    "fieldName": "realName"
+                  },
+                  {
+                    "labelDialect": "input_field_accountNo",
+                    "placeholderDialect": "input_tip_accountNo",
+                    "fieldName": "accountNo"
+                  },
+                  {
+                    "labelDialect": "input_field_branchName",
+                    "placeholderDialect": "input_tip_branchName",
+                    "fieldName": "branchName"
+                  },
+                  {
+                    "labelDialect": "input_field_bankName",
+                    "placeholderDialect": "input_tip_bankName",
+                    "fieldName": "bankName"
+                  }
+                ]
+              },
+              "realNameVerified": true
+            },
+            {
+              "id": "2434416",
+              "realName": "OLEKSII PISHCHUHIN",
+              "paymentType": 61,
+              "bankName": "",
+              "branchName": ",",
+              "accountNo": ",",
+              "qrcode": "",
+              "visible": 1,
+              "payMessage": "",
+              "firstName": "",
+              "lastName": "",
+              "secondLastName": "",
+              "clabe": "",
+              "debitCardNumber": "",
+              "mobile": "",
+              "businessName": "",
+              "concept": "",
+              "paymentExt1": "",
+              "paymentExt2": "",
+              "paymentExt3": "",
+              "paymentExt4": "",
+              "paymentExt5": "",
+              "paymentExt6": "",
+              "paymentTemplateVersion": 1,
+              "paymentConfig": {
+                "paymentType": 61,
+                "paymentName": "PUMB",
+                "paymentDialect": "payment_field_61",
+                "paymentTemplateItem": [
+                  {
+                    "labelDialect": "input_field_realName",
+                    "placeholderDialect": "input_tip_realName",
+                    "fieldName": "realName"
+                  },
+                  {
+                    "labelDialect": "input_field_accountNo",
+                    "placeholderDialect": "input_tip_accountNo",
+                    "fieldName": "accountNo"
+                  },
+                  {
+                    "labelDialect": "input_field_branchName",
+                    "placeholderDialect": "input_tip_branchName",
+                    "fieldName": "branchName"
+                  },
+                  {
+                    "labelDialect": "input_field_bankName",
+                    "placeholderDialect": "input_tip_bankName",
+                    "fieldName": "bankName"
+                  }
+                ]
+              },
+              "realNameVerified": true
+            }
+          ],
+          "version": 2,
+          "updateDate": "1717247796000",
+          "feeRate": "0",
+          "paymentPeriod": 30,
+          "itemType": "ORIGIN",
+          "verificationOrderSwitch": false,
+          "verificationOrderLabels": [],
+          "verificationOrderAmount": "",
+          "subsidyAd": false
+        }
+      ],
+      "hiddenFlag": false
+    },
+    "ext_code": "",
+    "ext_info": {},
+    "time_now": "1755102110.652533"
   }
 }

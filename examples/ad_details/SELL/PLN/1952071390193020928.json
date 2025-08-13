@@ -1,0 +1,265 @@
+{
+  "description": "Ad details for 1952071390193020928",
+  "request": {
+    "itemId": "1952071390193020928"
+  },
+  "response": {
+    "ret_code": 0,
+    "ret_msg": "SUCCESS",
+    "result": {
+      "id": "1952071390193020928",
+      "accountId": "24305226",
+      "userId": "24305224",
+      "nickName": "",
+      "tokenId": "USDT",
+      "tokenName": "USDT",
+      "currencyId": "PLN",
+      "side": 1,
+      "priceType": 0,
+      "price": "4.30",
+      "premium": "0",
+      "lastQuantity": "100",
+      "quantity": "100",
+      "frozenQuantity": "0",
+      "executedQuantity": "0",
+      "minAmount": "100.00",
+      "maxAmount": "3600.00",
+      "remark": "test, DON'T OPEN THE ORDER, #p #q",
+      "status": 20,
+      "createDate": "1754245062000",
+      "payments": [
+        "147",
+        "355",
+        "292"
+      ],
+      "orderNum": 0,
+      "finishNum": 0,
+      "recentOrderNum": 0,
+      "recentExecuteRate": 0,
+      "fee": "",
+      "isOnline": false,
+      "lastLogoutTime": "0",
+      "symbolInfo": {
+        "id": "45",
+        "exchangeId": "301",
+        "orgId": "9001",
+        "tokenId": "USDT",
+        "currencyId": "PLN",
+        "status": 1,
+        "lowerLimitAlarm": 80,
+        "upperLimitAlarm": 120,
+        "itemDownRange": "80",
+        "itemUpRange": "120",
+        "currencyMinQuote": "10",
+        "currencyMaxQuote": "220000",
+        "currencyLowerMaxQuote": "10",
+        "tokenMinQuote": "1",
+        "tokenMaxQuote": "50000",
+        "kycCurrencyLimit": "0",
+        "itemSideLimit": 3,
+        "buyFeeRate": "",
+        "sellFeeRate": "",
+        "orderAutoCancelMinute": 15,
+        "orderFinishMinute": 10,
+        "tradeSide": 9,
+        "currency": {
+          "id": "35",
+          "exchangeId": "0",
+          "orgId": "9001",
+          "currencyId": "PLN",
+          "scale": 2
+        },
+        "token": {
+          "id": "1",
+          "exchangeId": "0",
+          "orgId": "9001",
+          "tokenId": "USDT",
+          "scale": 4,
+          "sequence": 1
+        },
+        "buyAd": {
+          "paymentPeriods": [
+            15,
+            30
+          ]
+        },
+        "sellAd": {
+          "paymentPeriods": [
+            15,
+            30
+          ]
+        }
+      },
+      "tradingPreferenceSet": {
+        "hasUnPostAd": 0,
+        "isKyc": 1,
+        "isEmail": 0,
+        "isMobile": 0,
+        "hasRegisterTime": 0,
+        "registerTimeThreshold": 0,
+        "orderFinishNumberDay30": 0,
+        "completeRateDay30": "",
+        "nationalLimit": "",
+        "hasOrderFinishNumberDay30": 0,
+        "hasCompleteRateDay30": 0,
+        "hasNationalLimit": 0
+      },
+      "paymentTerms": [
+        {
+          "id": "6812130",
+          "realName": "Oleksii Pishchuhin",
+          "paymentType": 147,
+          "bankName": "",
+          "branchName": "",
+          "accountNo": "",
+          "qrcode": "",
+          "visible": 1,
+          "payMessage": "+48 781972552",
+          "firstName": "",
+          "lastName": "",
+          "secondLastName": "",
+          "clabe": "",
+          "debitCardNumber": "",
+          "mobile": "",
+          "businessName": "",
+          "concept": "",
+          "paymentExt1": "",
+          "paymentExt2": "",
+          "paymentExt3": "",
+          "paymentExt4": "",
+          "paymentExt5": "",
+          "paymentExt6": "",
+          "paymentTemplateVersion": 1,
+          "paymentConfig": {
+            "paymentType": 147,
+            "paymentName": "ING",
+            "paymentDialect": "payment_field_147",
+            "paymentTemplateItem": [
+              {
+                "labelDialect": "input_field_realName",
+                "placeholderDialect": "input_tip_realName",
+                "fieldName": "realName"
+              },
+              {
+                "labelDialect": "input_field_payMessage",
+                "placeholderDialect": "input_tip_payMessage",
+                "fieldName": "payMessage"
+              }
+            ]
+          },
+          "realNameVerified": true
+        },
+        {
+          "id": "7506150",
+          "realName": "OLEKSII PISHCHUHIN ",
+          "paymentType": 355,
+          "bankName": "",
+          "branchName": "",
+          "accountNo": "+48 781972552",
+          "qrcode": "",
+          "visible": 1,
+          "payMessage": "",
+          "firstName": "",
+          "lastName": "",
+          "secondLastName": "",
+          "clabe": "",
+          "debitCardNumber": "",
+          "mobile": "",
+          "businessName": "",
+          "concept": "",
+          "paymentExt1": "",
+          "paymentExt2": "",
+          "paymentExt3": "",
+          "paymentExt4": "",
+          "paymentExt5": "",
+          "paymentExt6": "",
+          "paymentTemplateVersion": 2,
+          "paymentConfig": {
+            "paymentType": 355,
+            "paymentName": "Bank Pekao",
+            "paymentDialect": "payment_field_Pekao",
+            "paymentTemplateItem": [
+              {
+                "labelDialect": "input_field_realName",
+                "placeholderDialect": "input_tip_realName",
+                "fieldName": "realName"
+              },
+              {
+                "labelDialect": "input_field_accountNo",
+                "placeholderDialect": "input_tip_accountNo",
+                "fieldName": "accountNo"
+              }
+            ]
+          },
+          "realNameVerified": true
+        },
+        {
+          "id": "7506165",
+          "realName": "OLEKSII PISHCHUHIN ",
+          "paymentType": 292,
+          "bankName": "+48 781972552",
+          "branchName": "bobrowe sprawy Oleksii Pishchuhin⤵️ blik ",
+          "accountNo": "chwilowo mam tylko blik",
+          "qrcode": "",
+          "visible": 1,
+          "payMessage": "",
+          "firstName": "",
+          "lastName": "",
+          "secondLastName": "",
+          "clabe": "",
+          "debitCardNumber": "",
+          "mobile": "",
+          "businessName": "",
+          "concept": "",
+          "paymentExt1": "",
+          "paymentExt2": "",
+          "paymentExt3": "",
+          "paymentExt4": "",
+          "paymentExt5": "",
+          "paymentExt6": "",
+          "paymentTemplateVersion": 3,
+          "paymentConfig": {
+            "paymentType": 292,
+            "paymentName": "mBank",
+            "paymentDialect": "payment_field_292",
+            "paymentTemplateItem": [
+              {
+                "labelDialect": "input_field_realName",
+                "placeholderDialect": "input_tip_realName",
+                "fieldName": "realName"
+              },
+              {
+                "labelDialect": "input_field_accountNo",
+                "placeholderDialect": "input_tip_accountNo",
+                "fieldName": "accountNo"
+              },
+              {
+                "labelDialect": "input_field_branchName",
+                "placeholderDialect": "input_tip_branchName",
+                "fieldName": "branchName"
+              },
+              {
+                "labelDialect": "input_field_bankName",
+                "placeholderDialect": "input_tip_bankName",
+                "fieldName": "bankName"
+              }
+            ]
+          },
+          "realNameVerified": true
+        }
+      ],
+      "version": 2,
+      "updateDate": "1754259739000",
+      "feeRate": "0",
+      "paymentPeriod": 30,
+      "itemType": "ORIGIN",
+      "verificationOrderSwitch": false,
+      "verificationOrderLabels": [],
+      "verificationOrderAmount": "0",
+      "subsidyAd": false
+    },
+    "ext_code": "",
+    "ext_info": {},
+    "time_now": "1755102115.679063"
+  }
+}

@@ -2,6 +2,85 @@
   "description": "Account information",
   "request": {},
   "response": {
-    "error": "HTTPSConnectionPool(host='api.bybit.com', port=443): Max retries exceeded with url: /v5/p2p/user/personal/info (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))"
+    "ret_code": 0,
+    "ret_msg": "SUCCESS",
+    "result": {
+      "nickName": "продам сарай",
+      "defaultNickName": false,
+      "whiteFlag": 1,
+      "contactConfig": true,
+      "isOnline": false,
+      "email": "a*******k@gmail.com",
+      "mobile": "********9593",
+      "kycLevel": 2,
+      "lastLogoutTime": "1755099820",
+      "recentRate": 97,
+      "totalFinishCount": 11981,
+      "totalFinishSellCount": 6302,
+      "totalFinishBuyCount": 5679,
+      "recentFinishCount": 45,
+      "averageReleaseTime": "1",
+      "averageTransferTime": "4",
+      "accountCreateDays": 1200,
+      "firstTradeDays": 709,
+      "realName": "OLEKSII PISHCHUHIN",
+      "recentTradeAmount": "13569.4523",
+      "totalTradeAmount": "2978112.4196",
+      "executeNum": 6710,
+      "orderNum": 7109,
+      "hasUnPostAd": 0,
+      "registerTime": "1651404541",
+      "authStatus": 2,
+      "kycCountryCode": "UKR",
+      "blocked": "",
+      "goodAppraiseRate": "95",
+      "goodAppraiseCount": 1293,
+      "badAppraiseCount": 60,
+      "accountId": "24305226",
+      "paymentCount": 43,
+      "contactCount": 2,
+      "realNameMask": "OLEKSII P***CHUHIN",
+      "vipLevel": 0,
+      "vipProfit": [],
+      "userTag": [
+        "RU_PAYMENT_PROMPT"
+      ],
+      "userCancelCountLimit": 6,
+      "paymentRealNameUneditable": true,
+      "lostRoleAffected": false,
+      "userCurPrivilege": [
+        "OPEN_API_ACCESS",
+        "DISPLAY_MAKER_GA",
+        "POST_EDIT_AD",
+        "CREATE_ORDER_BULK"
+      ],
+      "userType": "PERSONAL",
+      "userId": "24305224",
+      "realNameEn": "OLEKSII PISHCHUHIN",
+      "canSubOnline": true,
+      "curPrivilegeInfo": [
+        {
+          "name": "OPEN_API_ACCESS",
+          "data": "NONE"
+        },
+        {
+          "name": "DISPLAY_MAKER_GA",
+          "data": "NONE"
+        },
+        {
+          "name": "POST_EDIT_AD",
+          "data": "1"
+        },
+        {
+          "name": "CREATE_ORDER_BULK",
+          "data": "NONE"
+        }
+      ],
+      "openApiSwitch": 0,
+      "last30TradeCurrency": "UAH"
+    },
+    "ext_code": "",
+    "ext_info": {},
+    "time_now": "1755102109.856099"
   }
 }
