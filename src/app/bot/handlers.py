@@ -32,8 +32,8 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
         return
     controller = _controller(context)
     try:
-        message = controller.start()
-        await update.effective_message.reply_text(message)
+        status = controller.start()
+        await update.effective_message.reply_text(f"Application is {status.state.value}.")
     except Exception:
         logger.exception("Error handling /start")
         await update.effective_message.reply_text("Failed to start the application.")
@@ -47,8 +47,8 @@ async def stop(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
         return
     controller = _controller(context)
     try:
-        message = controller.stop()
-        await update.effective_message.reply_text(message)
+        status = controller.stop()
+        await update.effective_message.reply_text(f"Application is {status.state.value}.")
     except Exception:
         logger.exception("Error handling /stop")
         await update.effective_message.reply_text("Failed to stop the application.")
@@ -62,8 +62,8 @@ async def status(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
         return
     controller = _controller(context)
     try:
-        message = controller.status()
-        await update.effective_message.reply_text(message)
+        status = controller.status()
+        await update.effective_message.reply_text(f"Application is {status.state.value}.")
     except Exception:
         logger.exception("Error handling /status")
         await update.effective_message.reply_text("Failed to retrieve status.")
