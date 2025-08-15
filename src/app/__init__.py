@@ -1,4 +1,3 @@
 """Application package."""
 
-__all__ = ["api_client", "config", "main"]
-
+__all__ = ["api_client", "config", "main", "bot", "controller"]
