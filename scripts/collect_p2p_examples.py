@@ -5,13 +5,11 @@ stores the raw responses together with the request parameters and a short
 description. Results are written under the ``examples`` directory grouped by
 request type, trade side and fiat currency.
 
-Required environment variables:
+Secrets are provided via environment variables:
     - ``BYBIT_API_KEY``
     - ``BYBIT_API_SECRET``
 
-Optional environment variables:
-    - ``BYBIT_TESTNET`` (default: ``false``)
-    - ``BYBIT_RECV_WINDOW`` (default: ``20000``)
+Non‑secret options such as polling intervals or testnet mode are configured in ``config.yaml``.
 
 Usage::
 
@@ -30,7 +28,7 @@ from bybit_p2p import P2P
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.append(str(ROOT))
-from src.app.config import Settings
+from src.app.config import Settings  # noqa: E402
 
 # Disable proxy settings that may block requests in some environments
 os.environ["NO_PROXY"] = "*"
@@ -39,7 +37,7 @@ os.environ["HTTPS_PROXY"] = ""
 os.environ["ALL_PROXY"] = ""
 
 
-SIDES = {"BUY": "0", "SELL": "1"} # must be string values "0" or "1"
+SIDES = {"BUY": "0", "SELL": "1"}  # must be string values "0" or "1"
 CURRENCIES = ["UAH", "PLN"]
 TOKEN_ID = "USDT"
 
@@ -76,9 +74,7 @@ def call_and_save(method: Any, params: Dict[str, Any], path: Path, description: 
 
 def _extract_original_uid(order: Dict[str, Any]) -> Optional[str]:
     """Best-effort extraction of a counterparty UID from an order object."""
-    potential_keys: Iterable[str] = (
-        "targetUserId",
-    )
+    potential_keys: Iterable[str] = ("targetUserId",)
     for key in potential_keys:
         value = order.get(key)
         if value:
@@ -88,7 +84,7 @@ def _extract_original_uid(order: Dict[str, Any]) -> Optional[str]:
 
 def collect() -> None:
     """Execute all API requests and store responses."""
-    settings = Settings.from_env()
+    settings = Settings.from_file(ROOT / "config.yaml")
     client = P2P(
         testnet=settings.testnet,
         api_key=settings.api_key,
@@ -118,11 +114,11 @@ def collect() -> None:
             online_params = {
                 "tokenId": TOKEN_ID,
                 "currencyId": currency,  # camelCase
-                "side": side_value,       # string "0"/"1" (required)
+                "side": side_value,  # string "0"/"1" (required)
                 "page": "1",
                 "size": "10",
             }
-            online_resp = call_and_save(
+            call_and_save(
                 client.get_online_ads,
                 online_params,
                 base / "competitor_ads" / side_name / currency / "response.json",
@@ -154,7 +150,7 @@ def collect() -> None:
             order_params = {
                 "side": int(side_value),
                 "page": "1",
-                "size": SIZE_ORDERS, # STRICT LIMIT — DO NOT EDIT
+                "size": SIZE_ORDERS,  # STRICT LIMIT — DO NOT EDIT
             }
             orders_resp = call_and_save(
                 client.get_orders,
@@ -195,13 +191,15 @@ def collect() -> None:
 
                 # Order details & extras for the first order found for this currency
                 if first_order_for_currency:
-                    order_id = first_order_for_currency.get("orderId") or first_order_for_currency.get("id")
+                    order_id = first_order_for_currency.get(
+                        "orderId"
+                    ) or first_order_for_currency.get("id")
 
                     print(f"First order for {currency} on {side_name}: {order_id}")
                     if not order_id:
                         print("No order ID found, skipping details collection.")
                         continue
-                    
+
                     if order_id:
                         call_and_save(
                             client.get_order_details,
@@ -214,7 +212,11 @@ def collect() -> None:
                             call_and_save(
                                 client.get_counterparty_info,
                                 {"originalUid": original_uid, "orderId": order_id},
-                                base / "counterparty_info" / side_name / currency / f"{order_id}.json",
+                                base
+                                / "counterparty_info"
+                                / side_name
+                                / currency
+                                / f"{order_id}.json",
                                 f"Counterparty info for order {order_id}",
                             )
                         call_and_save(

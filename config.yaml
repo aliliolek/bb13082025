@@ -1,0 +1,12 @@
+bybit:
+  testnet: false
+  recv_window: 20000
+
+polling:
+  price: 60
+  balance: 300
+
+payments:
+  min_match_count: 1
+  mappings:
+    USDT_UAH: "MonoBank"
