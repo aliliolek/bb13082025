@@ -24,3 +24,4 @@ def load_config() -> dict:
         "testnet": testnet,
         "recv_window": recv_window,
     }
+
