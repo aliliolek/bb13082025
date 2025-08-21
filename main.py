@@ -13,7 +13,10 @@ def main() -> None:
         recv_window=config["recv_window"],
     )
 
-    print(client.get_pending_orders())
+    print(client.get_pending_orders(
+        page=1,
+        size=10,
+    ))
 
 
 if __name__ == "__main__":
