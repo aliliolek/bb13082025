@@ -1,6 +1,6 @@
 """Smoke tests for the sample application."""
 
-from src.app import main
+import main
 
 
 def test_main_callable() -> None:
