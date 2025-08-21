@@ -12,6 +12,7 @@ def main() -> None:
         testnet=config["testnet"],
         recv_window=config["recv_window"],
     )
+
     print(client.get_pending_orders())
 
 
