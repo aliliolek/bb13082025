@@ -39,7 +39,7 @@ os.environ["HTTPS_PROXY"] = ""
 os.environ["ALL_PROXY"] = ""
 
 
-SIDES = {"BUY": "0", "SELL": "1"} # must be string values "0" or "1"
+SIDES = {"BUY": "0", "SELL": "1"}  # must be string values "0" or "1"
 CURRENCIES = ["UAH", "PLN"]
 TOKEN_ID = "USDT"
 
@@ -76,9 +76,7 @@ def call_and_save(method: Any, params: Dict[str, Any], path: Path, description: 
 
 def _extract_original_uid(order: Dict[str, Any]) -> Optional[str]:
     """Best-effort extraction of a counterparty UID from an order object."""
-    potential_keys: Iterable[str] = (
-        "targetUserId",
-    )
+    potential_keys: Iterable[str] = ("targetUserId",)
     for key in potential_keys:
         value = order.get(key)
         if value:
@@ -118,7 +116,7 @@ def collect() -> None:
             online_params = {
                 "tokenId": TOKEN_ID,
                 "currencyId": currency,  # camelCase
-                "side": side_value,       # string "0"/"1" (required)
+                "side": side_value,  # string "0"/"1" (required)
                 "page": "1",
                 "size": "10",
             }
@@ -144,106 +142,43 @@ def collect() -> None:
                 f"My advertisements for {side_name} {TOKEN_ID} in {currency}",
             )
 
-            # 🚫 DO NOT CHANGE THIS VALUE 🚫
-            # Bybit P2P order/history endpoints fail or return inconsistent data
-            # when requesting more than 10 items per page.
-            # Strict limit: size <= 10. Changing this WILL break data collection!
-            SIZE_ORDERS = "10"
-
-            # Orders and grouped orders by status
-            order_params = {
-                "side": int(side_value),
-                "page": "1",
-                "size": SIZE_ORDERS, # STRICT LIMIT — DO NOT EDIT
-            }
-            orders_resp = call_and_save(
-                client.get_orders,
-                order_params,
-                base / "orders" / side_name / currency / "all_orders.json",
-                f"All orders for {side_name} {TOKEN_ID}",
-            )
-            call_and_save(
+            # Pending orders
+            pending_resp = call_and_save(
                 client.get_pending_orders,
-                order_params,
+                {"page": "1", "size": "10"},
                 base / "pending_orders" / side_name / currency / "all_pending_orders.json",
                 f"Pending orders for {side_name} {TOKEN_ID}",
             )
 
-            if "error" not in orders_resp:
-                orders: List[Dict[str, Any]] = (
-                    orders_resp.get("result", {}).get("list")
-                    or orders_resp.get("result", {}).get("items")
-                    or []
+            items: List[Dict[str, Any]] = pending_resp.get("result", {}).get("items") or []
+            order_ids = [str(item.get("id")) for item in items if item.get("id")]
+            first_order = items[0] if items else None
+            order_id = order_ids[0] if order_ids else ""
+
+            if order_id:
+                call_and_save(
+                    client.get_order_details,
+                    {"orderId": order_id},
+                    base / "order_details" / side_name / currency / f"{order_id}.json",
+                    f"Order details for {order_id}",
                 )
-                seen_status: Dict[str, bool] = {}
-                first_order_for_currency = None
-                for order in orders:
-                    fiat = order.get("currencyId") or order.get("currency")
-                    if fiat != currency:
-                        continue
-                    status = str(order.get("status"))
-                    if status not in seen_status:
-                        seen_status[status] = True
-                        save_json(
-                            base / "orders" / side_name / currency / f"status_{status}.json",
-                            f"Example order with status {status} for {side_name} {TOKEN_ID} in {currency}",
-                            order_params,
-                            order,
-                        )
-                    if not first_order_for_currency:
-                        first_order_for_currency = order
-
-                # Order details & extras for the first order found for this currency
-                if first_order_for_currency:
-                    order_id = first_order_for_currency.get("orderId") or first_order_for_currency.get("id")
-
-                    print(f"First order for {currency} on {side_name}: {order_id}")
-                    if not order_id:
-                        print("No order ID found, skipping details collection.")
-                        continue
-                    
-                    if order_id:
+                if first_order:
+                    original_uid = _extract_original_uid(first_order)
+                    if original_uid:
                         call_and_save(
-                            client.get_order_details,
-                            {"orderId": order_id},
-                            base / "order_details" / side_name / currency / f"{order_id}.json",
-                            f"Order details for {order_id}",
+                            client.get_counterparty_info,
+                            {"originalUid": original_uid, "orderId": order_id},
+                            base / "counterparty_info" / side_name / currency / f"{order_id}.json",
+                            f"Counterparty info for order {order_id}",
                         )
-                        original_uid = _extract_original_uid(first_order_for_currency)
-                        if original_uid:
-                            call_and_save(
-                                client.get_counterparty_info,
-                                {"originalUid": original_uid, "orderId": order_id},
-                                base / "counterparty_info" / side_name / currency / f"{order_id}.json",
-                                f"Counterparty info for order {order_id}",
-                            )
-                        call_and_save(
-                            client.get_chat_messages,
-                            {"orderId": order_id, "startMessageId": "0", "size": "100"},
-                            base / "chat_messages" / side_name / currency / f"{order_id}.json",
-                            f"Chat messages for order {order_id}",
-                        )
-                else:
-                    # Placeholders for missing orders
-                    placeholder_id = "0"
-                    call_and_save(
-                        client.get_order_details,
-                        {"orderId": placeholder_id},
-                        base / "order_details" / side_name / currency / "none.json",
-                        "Order details placeholder",
-                    )
-                    call_and_save(
-                        client.get_counterparty_info,
-                        {"originalUid": "0", "orderId": placeholder_id},
-                        base / "counterparty_info" / side_name / currency / "none.json",
-                        "Counterparty info placeholder",
-                    )
                     call_and_save(
                         client.get_chat_messages,
-                        {"orderId": placeholder_id, "startMessageId": "0", "size": "100"},
-                        base / "chat_messages" / side_name / currency / "none.json",
-                        "Chat messages placeholder",
+                        {"orderId": order_id, "startMessageId": "0", "size": "100"},
+                        base / "chat_messages" / side_name / currency / f"{order_id}.json",
+                        f"Chat messages for order {order_id}",
                     )
+            else:
+                print("No pending orders found; skipping order detail retrieval.")
 
             # Ad details for the first advertisement
             if "error" not in my_ads_resp:
